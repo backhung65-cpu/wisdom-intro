@@ -1,508 +1,209 @@
 <!doctype html>
 <html lang="ko">
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="이미 쓰시는 챗지피티 · 클로드 요금제로, 내 컴퓨터 안의 AI 직원들이 안내문 · 카드뉴스 · 영상을 만들고 서로 확인합니다. 30일 체험.">
 <title>WISDOM — 누구나 자동화할 수 있는 AI 에이전트</title>
+<meta name="description" content="말로 맡기면 내 컴퓨터 안의 AI 직원들이 안내문 · 카드뉴스 · 영상을 만들고, 다른 AI 가 확인하고, 실장이 아침마다 보고합니다. 이미 쓰시는 챗지피티 · 클로드 요금제 그대로.">
+<meta property="og:title" content="WISDOM — 누구나 자동화할 수 있는 AI 에이전트">
+<meta property="og:description" content="말로 맡기면 내 컴퓨터 안의 AI 직원들이 만들고, 확인하고, 아침마다 보고합니다.">
+<meta property="og:image" content="img/hero.jpg">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;800&display=swap">
-<style>
-/* 짜임: 사양서 8장 '소개 페이지' 를 결제로 이어지는 순서로 (2026-10-10) — 첫 화면 → 왜 → 하는 일 → 어떻게 → 무엇이 달라요 →
-   실제 화면 → 직원 · 위인 → 안심 → 값 → 시작 · 체험 → 질문 → 만든이 → 맺음. surface/paper 번갈아. 색은 사양서 tokens.json 그대로 */
-:root{
-  --paper:#f4f5f7; --surface:#ffffff; --ink:#1c1e22; --muted:#5b616a; --line:#dfe2e6;
-  --mark:#2a5580; --on-mark:#ffffff; --mark-soft:#e8eff6;
-  --mark-deep:#12304f; --on-deep:#f4f7fb; --mark-glow:#9cc4ee; --deep-muted:#c3d3e6; --deep-line:#2b4a6b;
-  --good:#2f6b48; --good-soft:#e7f1ea; --warn:#9c3b2a; --warn-soft:#f8ece9; --gold:#7a5c14; --gold-soft:#f6efdc;
-  --font:Pretendard,"Noto Sans KR",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
-  --r-sm:.6rem; --r-md:.7rem; --r-lg:.9rem; --tap:44px;
-  --lift:0 18px 48px rgba(18,48,79,.18);
-}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --paper:#14171b; --surface:#1d2127; --ink:#eef0f3; --muted:#a3aab3; --line:#2f353d;
-  --mark:#8fb5dc; --on-mark:#10233a; --mark-soft:#1f2d3d; --mark-deep:#0c1f33; --deep-line:#23405e;
-  --good:#7cc39a; --good-soft:#1b2e23; --warn:#e58e7d; --warn-soft:#3a221d; --gold:#d9b45a; --gold-soft:#33291a;
-  --lift:0 18px 48px rgba(0,0,0,.5); color-scheme:dark}}
-:root[data-theme="dark"]{
-  --paper:#14171b; --surface:#1d2127; --ink:#eef0f3; --muted:#a3aab3; --line:#2f353d;
-  --mark:#8fb5dc; --on-mark:#10233a; --mark-soft:#1f2d3d; --mark-deep:#0c1f33; --deep-line:#23405e;
-  --good:#7cc39a; --good-soft:#1b2e23; --warn:#e58e7d; --warn-soft:#3a221d; --gold:#d9b45a; --gold-soft:#33291a;
-  --lift:0 18px 48px rgba(0,0,0,.5); color-scheme:dark}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{margin:0;background:var(--surface);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.7;word-break:keep-all;overflow-wrap:anywhere}
-a{color:var(--mark)}
-:focus-visible{outline:3px solid var(--mark);outline-offset:2px}
-.wrap{max-width:72rem;margin:0 auto;padding-inline:clamp(16px,4vw,32px)}
-h1,h2,h3{text-wrap:balance;letter-spacing:-.02em;margin:0}
-h2{font-size:clamp(28px,4vw,36px);line-height:1.3;font-weight:800}
-h3{font-size:19px;line-height:1.45;font-weight:700}
-p{margin:0}
-.eyebrow{font-size:14px;font-weight:700;letter-spacing:.04em;color:var(--mark)}
-.lead{font-size:19px;line-height:1.7;color:var(--muted);max-width:42rem}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:var(--tap);padding:.5rem 1.3rem;border-radius:var(--r-md);border:1px solid var(--line);background:var(--surface);color:var(--ink);font:inherit;font-weight:700;text-decoration:none;cursor:pointer}
-.btn:hover{border-color:var(--mark)}
-.btn.solid{background:var(--mark);border-color:var(--mark);color:var(--on-mark)}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:1.3rem 1.4rem;display:flex;flex-direction:column;gap:.5rem;min-width:0}
-.card p{color:var(--muted)}
-.tag{display:inline-block;padding:0 .6em;border-radius:999px;font-size:13.6px;font-weight:700;background:var(--mark-soft);color:var(--mark);width:fit-content}
-.grid{display:grid;gap:16px}
-.g2{grid-template-columns:repeat(auto-fit,minmax(min(20rem,100%),1fr))}
-.g3{grid-template-columns:repeat(auto-fit,minmax(min(17rem,100%),1fr))}
-.g4{grid-template-columns:repeat(auto-fit,minmax(min(14rem,100%),1fr))}
-section.sec{padding-block:64px}
-section.alt{background:var(--paper)}
-.head{display:flex;flex-direction:column;gap:.6rem;margin-bottom:28px}
-.shot{display:block;width:100%;height:auto;border-radius:var(--r-lg);border:1px solid var(--line);background:var(--surface)}
-.cap{font-size:14px;color:var(--muted);margin-top:.5rem}
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<a class="btn" href="#main" style="position:absolute;left:-999px">본문으로</a>
+<header class="top"><div class="wrap topin">
+  <a class="logo" href="#top"><i>W</i>WISDOM</a>
+  <nav class="nav" aria-label="주 메뉴">
+    <a href="updates.html">업데이트 소식</a><a href="story.html">만든 이야기</a>
+    <a href="#tour">화면</a><a href="#chief">실장</a><a href="#check">확인</a><a href="#cost">비용</a><a href="#privacy">개인정보</a>
+  </nav>
+  <a class="btn solid" href="#download">내려받기</a>
+</div></header>
 
-/* 메뉴 띠 */
-.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--mark-deep);border-bottom:1px solid var(--deep-line)}
-.topin{display:flex;align-items:center;gap:.5rem 1.2rem;flex-wrap:wrap;padding-block:.5rem}
-.logo{font-weight:800;font-size:20px;letter-spacing:-.02em;color:var(--on-deep);text-decoration:none;margin-right:auto}
-.nav{display:flex;flex-wrap:wrap;gap:.2rem}
-.nav a{color:var(--deep-muted);text-decoration:none;font-size:15px;padding:.4rem .6rem;border-radius:var(--r-sm)}
-.nav a:hover{color:var(--on-deep);background:var(--deep-line)}
-.top .btn.solid{background:var(--mark-glow);border-color:var(--mark-glow);color:#10233a;min-height:40px}
-@media (max-width:760px){.nav{display:none}}
-
-/* 첫 화면 */
-.hero{background:var(--mark-deep);color:var(--on-deep);padding-block:72px 0}
-.hero .eyebrow{color:var(--mark-glow)}
-.hero h1{font-size:clamp(38px,6vw,58px);line-height:1.15;font-weight:800;margin-top:14px}
-.hero h1 em{font-style:normal;color:var(--mark-glow)}
-.hero .lead{color:var(--deep-muted);margin-top:18px}
-.hero .row{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
-.hero .btn{background:transparent;color:var(--on-deep);border-color:var(--deep-muted)}
-.hero .btn.solid{background:var(--mark-glow);border-color:var(--mark-glow);color:#10233a}
-.hero .note{font-size:14px;color:var(--deep-muted);margin-top:14px}
-.hero-shot{margin-top:44px;position:relative}
-/* 캡처는 [맡기기] 단추 줄 아래에서 끊는다 — 그 아래 팀 카드가 반쯤 걸려 잘려 보였다 */
-.hero-shot img{display:block;width:100%;height:auto;aspect-ratio:1500/745;object-fit:cover;object-position:top;border-radius:var(--r-lg) var(--r-lg) 0 0;box-shadow:var(--lift);border:1px solid var(--deep-line);border-bottom:0}
-.chief{position:absolute;right:-8px;bottom:12%;display:flex;align-items:flex-end;gap:8px;max-width:min(330px,60%)}
-.chief img{width:96px;height:96px;flex:none;border-radius:50%;background:var(--surface);border:3px solid var(--mark-glow);box-shadow:none}
-.chief .bubble{background:var(--surface);color:var(--ink);border-radius:var(--r-lg);padding:.7rem .9rem;font-size:15px;line-height:1.5;box-shadow:var(--lift)}
-@media (max-width:640px){.chief{position:static;margin-top:-20px;max-width:none;padding-inline:8px}}
-
-/* 왜 필요한가 */
-.stats{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(14rem,100%),1fr));margin-bottom:24px}
-.stat b{display:block;font-size:44px;line-height:1.1;font-weight:800;color:var(--mark);font-variant-numeric:tabular-nums}
-.stat span{color:var(--muted);font-size:15px}
-.src{font-size:13.6px;color:var(--muted);margin-top:16px}
-
-/* 비교표 */
-.tablebox{overflow-x:auto;margin-top:24px;border:1px solid var(--line);border-radius:var(--r-lg);background:var(--surface)}
-table{border-collapse:collapse;width:100%;min-width:640px;font-size:15.5px}
-th,td{text-align:left;padding:.85rem 1rem;border-bottom:1px solid var(--line);vertical-align:top}
-tr:last-child td{border-bottom:0}
-th{font-weight:700;background:var(--paper)}
-.us{background:var(--mark-soft);color:var(--ink);font-weight:700}
-th.us{color:var(--mark)}
-
-/* 어떻게 도나 */
-.steps{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(14rem,100%),1fr));counter-reset:s;list-style:none;padding:0;margin:0}
-.steps li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:1.3rem 1.4rem;display:flex;flex-direction:column;gap:.4rem}
-.steps li::before{content:counter(s);display:grid;place-items:center;width:40px;height:40px;border-radius:999px;background:var(--mark);color:var(--on-mark);font-weight:800}
-.steps li:last-child{background:var(--mark-soft);border-color:var(--mark-soft)}
-.steps p{color:var(--muted)}
-
-/* 실제 화면 — 글과 그림을 번갈아 */
-.alt-row{display:grid;gap:32px;align-items:center;grid-template-columns:repeat(auto-fit,minmax(min(24rem,100%),1fr));margin-top:40px}
-.alt-row:first-of-type{margin-top:0}
-.alt-row .txt{display:flex;flex-direction:column;gap:.7rem;min-width:0}
-.alt-row ul{margin:0;padding-left:1.1rem;color:var(--muted)}
-.alt-row li{margin:.25rem 0}
-.alt-row.flip .txt{order:2}
-@media (max-width:820px){.alt-row.flip .txt{order:0}}
-
-/* 직원들 */
-.staff{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(8.5rem,100%),1fr))}
-.person{display:flex;flex-direction:column;align-items:center;gap:.3rem;text-align:center;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:1rem .6rem}
-.person img{width:110px;height:110px;object-fit:contain}
-.person b{font-size:16px}
-.person span{font-size:13.6px;color:var(--muted)}
-.person.lead-p{border-color:var(--mark);background:var(--mark-soft)}
-
-/* 위인 */
-.figs{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(10rem,100%),1fr));margin-bottom:8px}
-.fig{display:flex;flex-direction:column;align-items:center;gap:.25rem;text-align:center;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:1rem .7rem}
-.fig img{width:96px;height:96px;object-fit:contain}
-.fig b{font-size:16px}
-.fig span{font-size:13.6px;color:var(--muted);line-height:1.5}
-
-/* 약속 */
-.honest{margin-top:16px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:1.3rem 1.4rem}
-.honest ul{margin:.5rem 0 0;padding-left:1.1rem;color:var(--muted)}
-
-/* 시작 */
-.start{list-style:none;padding:0;margin:0;display:grid;gap:12px;counter-reset:t;max-width:46rem}
-.start li{counter-increment:t;display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:1rem 1.2rem}
-.start li::before{content:counter(t);display:grid;place-items:center;width:40px;height:40px;border-radius:999px;border:2px solid var(--mark);color:var(--mark);font-weight:800}
-.start p{color:var(--muted)}
-
-/* 체험 받기 */
-.get{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(22rem,100%),1fr));align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:1.6rem}
-.copybox{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-.copybox code{font:inherit;font-weight:700;background:var(--paper);border:1px dashed var(--line);border-radius:var(--r-md);padding:.5rem .8rem;user-select:all}
-
-/* 값 */
-.plans{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(17rem,100%),1fr))}
-.plan{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:1.4rem 1.4rem 1.2rem;display:flex;flex-direction:column;gap:.35rem;min-width:0}
-.plan.pick{border:2px solid var(--mark);box-shadow:var(--lift)}
-.plan .won{font-size:17px;color:var(--muted);margin-top:.3rem}
-.plan .won b{font-size:34px;line-height:1.15;color:var(--ink);font-weight:800;font-variant-numeric:tabular-nums}
-.plan .per{font-size:15px;color:var(--mark);font-weight:700}
-.plan ul{margin:.6rem 0 0;padding-left:1.1rem;color:var(--muted)}
-.plan li{margin:.2rem 0}
-.founder{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;margin-top:16px;background:var(--gold-soft);border-radius:var(--r-lg);padding:1.2rem 1.4rem}
-.founder p{color:var(--muted);margin-top:.3rem}
-.tag.gold{background:var(--surface);color:var(--gold)}
-.sub-h{margin:56px 0 16px}
-
-/* 질문 */
-details{border-bottom:1px solid var(--line);padding-block:.4rem}
-summary{cursor:pointer;font-weight:700;min-height:var(--tap);display:flex;align-items:center;gap:.5rem;list-style:none}
-summary::before{content:"+";color:var(--mark);font-weight:800;width:1em}
-details[open] summary::before{content:"−"}
-details p{color:var(--muted);padding:0 0 .8rem 1.5rem;max-width:46rem}
-
-/* 만든이 */
-.maker{display:grid;gap:28px;grid-template-columns:minmax(0,15rem) minmax(0,1fr);align-items:start}
-@media (max-width:720px){.maker{grid-template-columns:1fr}}
-.photo{display:block;width:100%;height:auto;max-width:15rem;border-radius:var(--r-lg);background:#ffffff;border:1px solid var(--line)}
-.muted-line{color:var(--muted);margin-top:.3rem}
-.quote{margin-top:20px;padding-left:1rem;border-left:3px solid var(--mark);color:var(--ink);font-weight:700;max-width:44rem}
-.roles{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(14rem,100%),1fr));margin-top:16px}
-
-/* 맺음 띠 */
-.close{background:var(--mark-deep);color:var(--on-deep);padding-block:72px;text-align:left}
-.close h2{color:var(--on-deep);max-width:44rem}
-.close h2 em{font-style:normal;color:var(--mark-glow)}
-.close p{color:var(--deep-muted);margin-top:14px;max-width:40rem}
-.close .btn.solid{background:var(--mark-glow);border-color:var(--mark-glow);color:#10233a;margin-top:24px}
-footer{background:var(--mark-deep);color:var(--deep-muted);border-top:1px solid var(--deep-line);font-size:14px;padding-block:24px}
-</style>
-
-<header class="top">
-  <div class="wrap topin">
-    <a class="logo" href="#top">WISDOM</a>
-    <nav class="nav" aria-label="이 페이지 안내">
-      <a href="#work">하는 일</a><a href="#how">어떻게 도나</a><a href="#diff">무엇이 달라요</a>
-      <a href="#screens">실제 화면</a><a href="#team">직원 · 위인</a><a href="#safe">안심</a><a href="#price">값</a><a href="#faq">질문</a>
-    </nav>
-    <a class="btn solid" href="#get">30일 체험 받기</a>
-  </div>
-</header>
-
-<main id="top">
-<!-- 1 첫 화면 -->
-<section class="hero">
+<main id="main">
+<section class="hero" id="top">
   <div class="wrap">
-    <p class="eyebrow">말하고 결재만 하는 AI 사무실</p>
+    <a class="pill" href="updates.html"><b>새 판 1.13.8</b> 실장의 아침 보고 · 자동화 제안 · 실장 일지 →</a>
     <h1><em>누구나</em> 자동화할 수 있는<br>AI 에이전트</h1>
-    <p class="lead">안내문 · 카드뉴스 · 영상 · 홈페이지 글을 말 한 줄로 맡기세요. 이미 쓰시는 챗지피티 · 클로드 요금제 그대로, 내 컴퓨터 안의 AI 직원들이 만들고 서로 확인합니다.</p>
-    <div class="row"><a class="btn solid" href="#get">30일 체험 받기</a><a class="btn" href="#price">값 보기</a></div>
-    <p class="note">윈도우 10 · 11 (맥은 시험 중) · 베타 동안 무료 · 정식 판 연 29만 원(하루 약 800원) · 같이 설치해 드립니다</p>
+    <p class="lead">말로 맡기시면 내 컴퓨터 안의 AI 직원들이 안내문 · 카드뉴스 · 영상을 만들고, 다른 AI 가 확인하고,
+      실장이 아침마다 보고합니다. 대표님은 결재만 하십니다. 이미 쓰시는 챗지피티 · 클로드 요금제 그대로.</p>
+    <div class="row">
+      <a class="btn solid big" href="#download">윈도우용 내려받기</a>
+      <a class="btn big" href="#download">맥용 내려받기</a>
+      <a class="btn big" href="#download">리눅스용 내려받기</a>
+    </div>
+    <p class="note">1.13.8 베타 · 윈도우 10 · 11 (64비트) · 맥 (애플 칩) · 리눅스 (우분투 22.04 이후 · 64비트) · 지금은 무료로 쓰실 수 있습니다 · <a href="install.html">설치 도움말</a></p>
+    <div class="facts" aria-label="WISDOM 한눈에">
+      <div><b>23</b> 맡길 수 있는 업무</div>
+      <div><b>3</b> 이어 쓰는 AI (챗지피티 · 클로드 · 안티그래비티)</div>
+      <div><b>0원</b> 따로 드는 AI 요금</div>
+      <div><b>0</b> 서버 · 회원가입</div>
+    </div>
     <div class="hero-shot">
       <img src="img/hero.jpg" alt="WISDOM 맡기기 화면 — 한 칸에 말로 적고 [맡기기] 를 누른다" width="1500" height="1030">
-      <div class="chief">
-        <div class="bubble">정비소 안내문도, 빵집 카드뉴스도, 교회 주보도 — 한 줄이면 됩니다.</div>
-        <img src="img/char/haneul.png" alt="실장 하늘" width="96" height="96">
-      </div>
     </div>
   </div>
 </section>
 
-<!-- 2 왜 필요한가 -->
-<section class="sec" id="why">
+<section class="sec" id="tour">
   <div class="wrap">
-    <div class="head">
-      <p class="eyebrow">왜 필요해요</p>
-      <h2>사장님 · 목사님은 오늘도 혼자 다 하십니다</h2>
-      <p class="lead">손님을 맞고, 예배를 준비하고, 그러고 나서 밤에 안내문과 홍보물을 만듭니다. AI 가 대신해 줄 수 있다는 건 알지만, 어디서부터 시작할지가 막막합니다.</p>
+    <div class="head"><p class="eyebrow">화면</p><h2>메뉴는 다섯, 한 번에 한 가지.</h2>
+      <p class="lead">컴퓨터가 가장 낯선 분이 혼자 끝까지 쓰실 수 있게 만들었습니다. 글씨 크기는 크게 · 보통 · 촘촘 가운데서 고르십니다.</p></div>
+    <div class="tabs" role="tablist" aria-label="화면 고르기" id="tabs"></div>
+    <div class="tour">
+      <img class="shot" id="tourImg" src="img/hero.jpg" alt="" width="1500" height="1030">
+      <div class="say"><span class="tag" id="tourTag"></span><h3 id="tourTitle"></h3><p id="tourText"></p></div>
     </div>
-    <div class="stats">
-      <div class="stat"><b>1.57명</b><span>소상공인 한 곳의 평균 일하는 사람 수 (613만 곳)</span></div>
-      <div class="stat"><b>9.7%</b><span>서울 소상공인 중 AI 를 쓰는 곳</span></div>
-      <div class="stat"><b>69%</b><span>AI 를 못 쓰는 까닭 1위 '비용' · 2위 '사람이 없다'</span></div>
-    </div>
-    <div class="grid g3">
-      <div class="card"><h3>홍보는 늘 밤으로 밀립니다</h3><p>신메뉴 안내 한 장, 행사 카드 한 장에 저녁이 갑니다. 대행사에 맡기면 그때마다 돈이 듭니다.</p></div>
-      <div class="card"><h3>AI 는 빈 화면부터 시작합니다</h3><p>무엇을 어떻게 물어야 할지, 결과가 맞는지 내가 다 챙겨야 합니다. 매주 처음부터 다시입니다.</p></div>
-      <div class="card"><h3>가입 · 로그인 · 연결이 벽입니다</h3><p>쓰고 싶어도 시작 화면에서 막힙니다. 컴퓨터가 낯설수록 벽은 더 높습니다.</p></div>
-    </div>
-    <p class="src">출처: 2024년 기준 소상공인실태조사 (중기부 · 소진공, 2026년 3월) · 중기중앙회 서울 소상공인 300곳 조사 (2025)</p>
+    <p class="cap">화면은 보기용으로 세운 회사 '달빛베이커리' 입니다.</p>
   </div>
 </section>
 
-<!-- 3 하는 일 -->
 <section class="sec alt" id="work">
   <div class="wrap">
-    <div class="head">
-      <p class="eyebrow">하는 일</p>
-      <h2>가게 · 사무실 · 학원 · 교회, 하는 일이 달라도</h2>
-      <p class="lead">업종에 맞는 일 묶음(꾸러미)을 골라 회사를 세웁니다. 나중에 더 들일 수도 있습니다.</p>
-    </div>
+    <div class="head"><p class="eyebrow">하는 일</p><h2>빵집 · 정비소 · 학원 · 교회,<br>하는 일이 달라도.</h2>
+      <p class="lead">업무마다 설명서 한 장이 있습니다 — 목적 · 결과물 · 순서 · 합격 기준 · 하지 말 것. 담당 직원이 그대로 일하고, 회사에 맞게 고쳐 쓰실 수 있습니다.</p></div>
     <div class="grid g4">
-      <div class="card"><h3>손님 안내문</h3><p>정비소의 겨울 무상 점검 안내 · 문자용 90자와 긴 안내를 한 번에</p></div>
-      <div class="card"><h3>카드뉴스</h3><p>빵집 가을 신메뉴 카드 열 장 · 우리 가게 색과 로고로</p></div>
-      <div class="card"><h3>홈페이지 · 랜딩</h3><p>세무사무소 종합소득세 상담 신청 페이지 · 컴퓨터와 휴대폰 화면 모두</p></div>
-      <div class="card"><h3>영상 · 쇼츠</h3><p>학원 설명회 1분 영상 · 나레이션과 배경음까지</p></div>
-      <div class="card"><h3>설교 뒤의 한 주</h3><p>설교 한 편 → 요약 · 소그룹 교재 · 묵상 · 말씀카드 · 슬라이드. 설교는 목사님이 하십니다</p></div>
-      <div class="card"><h3>고객 분석 · 판매 흐름</h3><p>강사의 수강생 분석 → 판매 흐름 → 문구 → 신청 페이지 · 후속 메시지</p></div>
-      <div class="card"><h3>조사 · 기획</h3><p>출처 링크를 프로그램이 직접 열어 확인한 조사 · 행사 기획안</p></div>
-      <div class="card"><h3>매일 하는 일</h3><p>요일과 시각만 정하면 직원이 먼저 시작 · 하루 상한과 끄는 단추</p></div>
+      <div class="card"><span class="tag">글 · 안내</span><h3>손님 안내문 · 카드뉴스</h3><p>신메뉴 문자, 정비 안내, 수강 안내, 주보 광고. 카드뉴스는 장마다 그림으로.</p></div>
+      <div class="card"><span class="tag">영상</span><h3>쇼츠 · 모션그래픽 · 스토리텔링</h3><p>목소리 · 배경음악 · 자막까지. 유튜브에는 비공개로만 올립니다.</p></div>
+      <div class="card"><span class="tag">조사 · 기획</span><h3>리서치 · 기획안 · 강의 제안서</h3><p>출처 주소를 코드가 직접 열어 보고, 없는 주소는 빼고 알립니다.</p></div>
+      <div class="card"><span class="tag">마케팅</span><h3>고객 분석 · 랜딩 · 전자책</h3><p>손님의 마음 여덟 칸부터 랜딩 페이지 · 배너 · 후속 메시지 · PDF 전자책까지.</p></div>
     </div>
+    <p class="cap" style="margin-top:16px">교회를 쓰시면 설교 한 편을 한 주 자료(요약 · 소그룹 · 묵상 · 말씀카드)로 바꾸는 꾸러미도 함께 드립니다. 설교는 목사님이 하십니다.</p>
   </div>
 </section>
 
-<!-- 4 어떻게 도나 -->
-<section class="sec" id="how">
-  <div class="wrap">
-    <div class="head">
-      <p class="eyebrow">어떻게 도나</p>
-      <h2>대표님은 말하고 결재만 하십니다</h2>
-    </div>
-    <ol class="steps">
-      <li><h3>말합니다</h3><p>한 줄로, 또는 설문 카드에 답하며. 실장이 알맞은 팀에 넘깁니다.</p></li>
-      <li><h3>직원이 만듭니다</h3><p>그 일의 설명서대로 담당 직원이 처음부터 끝까지 만듭니다.</p></li>
-      <li><h3>다른 AI 가 확인합니다</h3><p>합격 기준 · 링크 · 글자 넘침을 확인하고, 못 맞춘 곳은 다시 고칩니다.</p></li>
-      <li><h3>대표님이 결재합니다</h3><p>손님에게 나가는 것만 결재를 받습니다. 결재한 방식은 다음에도 같게 돕니다.</p></li>
-    </ol>
-  </div>
-</section>
-
-<!-- 5 무엇이 달라요 -->
-<section class="sec alt" id="diff">
-  <div class="wrap">
-    <div class="head">
-      <p class="eyebrow">무엇이 달라요</p>
-      <h2>AI 를 하나 더 주는 게 아니라, AI 가 일하는 사무실을 드립니다</h2>
-      <p class="lead">가장 낯선 분이 막히지 않게 만들었습니다. 그래서 누구나 씁니다.</p>
-    </div>
-    <div class="grid g3">
-      <div class="card"><span class="tag">빈 화면 없음</span><h3>한 가지씩 묻고, 예시를 보여 줍니다</h3><p>맡길 일을 고르면 설문 카드가 한 번에 한 가지만 묻습니다. 주제를 적으면 그 주제에 맞는 답 셋을 단추로 보여 줍니다.</p></div>
-      <div class="card"><span class="tag">같이 준비</span><h3>로그인도 실장과 함께</h3><p>처음 켜면 실장이 AI 연결을 한 단계씩 같이 합니다. 이미 된 것은 건너뜁니다.</p></div>
-      <div class="card"><span class="tag">서로 확인</span><h3>다른 AI 가 한 번 더 봅니다</h3><p>쓴 AI 와 다른 AI 가 기준대로 확인합니다. 지어낸 링크 · 전화번호는 프로그램이 직접 걸러 냅니다.</p></div>
-      <div class="card"><span class="tag">추가 요금 없음</span><h3>이미 내는 요금제 그대로</h3><p>쓰시는 챗지피티 · 클로드 요금제 안에서 일합니다. AI 요금이 더 들지 않습니다.</p></div>
-      <div class="card"><span class="tag">기억</span><h3>우리 가게를 압니다</h3><p>회사 소개 카드(색 · 로고 · 말투)와 고치라고 한 말을 직원이 기억해 다음에 이어 갑니다.</p></div>
-      <div class="card"><span class="tag">스스로</span><h3>매주 할 일은 먼저 시작합니다</h3><p>주보 · 소식 · 정기 안내처럼 되풀이되는 일은 정한 때에 직원이 알아서 시작합니다.</p></div>
-    </div>
-    <div class="tablebox">
-      <table>
-        <tr><th></th><th>챗지피티를 그냥 쓸 때</th><th>대행사에 맡길 때</th><th class="us">WISDOM</th></tr>
-        <tr><td>시작</td><td>무엇을 물을지 내가 정함</td><td>설명하고 기다림</td><td class="us">설문 카드가 한 가지씩 · 예시 셋</td></tr>
-        <tr><td>우리 가게를 아나</td><td>매번 다시 설명</td><td>담당자가 바뀌면 다시</td><td class="us">회사 소개 카드 · 고친 말을 기억</td></tr>
-        <tr><td>맞는지 확인</td><td>내가 직접</td><td>업체마다 다름</td><td class="us">다른 AI 확인 + 대표 결재</td></tr>
-        <tr><td>매주 하는 일</td><td>매주 처음부터</td><td>맡길 때마다</td><td class="us">정한 때에 스스로 시작</td></tr>
-        <tr><td>비용</td><td>요금제</td><td>건마다</td><td class="us">요금제 그대로 + 하루 약 800원</td></tr>
-      </table>
-    </div>
-  </div>
-</section>
-
-<!-- 6 실제 화면 -->
-<section class="sec" id="screens">
-  <div class="wrap">
-    <div class="head">
-      <p class="eyebrow">실제 화면</p>
-      <h2>벽마다, 화면이 먼저 손을 내밉니다</h2>
-      <p class="lead">시연용으로 만든 보기 회사 '달빛베이커리' 의 화면입니다.</p>
-    </div>
-    <div class="alt-row">
-      <div class="txt"><span class="tag">처음 켤 때</span><h3>실장과 함께 준비</h3>
-        <ul><li>일할 AI 를 하나 고르고 [설치하기] → [로그인]</li><li>브라우저가 열리면 평소 계정으로 로그인만</li><li>이미 된 것은 ✓ 로 건너뜀</li></ul></div>
-      <div><img class="shot" src="img/setup.jpg" alt="실장과 함께 준비 화면 — 일할 AI 연결" loading="lazy" width="1500" height="1030"></div>
-    </div>
-    <div class="alt-row flip">
-      <div class="txt"><span class="tag">맡길 때</span><h3>설문 카드 · 주제에 맞는 예시</h3>
-        <ul><li>한 번에 한 가지만 묻습니다</li><li>주제를 적으면 다음 물음부터 맞춤 예시 셋</li><li>누르면 칸에 들어가고, 고쳐 써도 됩니다</li></ul></div>
-      <div><img class="shot" src="img/survey.jpg" alt="설문 카드 — 누가 볼 카드인가요? 예시 세 가지" loading="lazy" width="1344" height="884"></div>
-    </div>
-    <div class="alt-row">
-      <div class="txt"><span class="tag">받을 때</span><h3>받은 것 — 날짜별로 쌓입니다</h3>
-        <ul><li>[보기] · [워드로 받기]</li><li>마음에 안 들면 [고치라고 하기] 한 줄</li><li>마음에 들면 좋은 예로 남겨 다음에 이어 감</li></ul></div>
-      <div><img class="shot" src="img/results.jpg" alt="받은 것 화면 — 결과함" loading="lazy" width="1500" height="1030"></div>
-    </div>
-  </div>
-</section>
-
-<!-- 7 직원과 위인 -->
-<section class="sec alt" id="team">
-  <div class="wrap">
-    <div class="head">
-      <p class="eyebrow">우리 직원 · 왜 이름이 WISDOM 인가요</p>
-      <h2>직원이 일하고, 위인이 조언합니다</h2>
-      <p class="lead">실장이 일을 받아 나누고, 직원마다 맡은 자리가 있습니다. 일할수록 레벨이 오르고, 대표님이 고치라고 한 말은 '배운 것' 으로 쌓입니다. 직원 자리에 이순신 · 정조 · 제갈량 같은 위인을 앉히면 그 사람의 생각하는 방식으로 일합니다.</p>
-    </div>
-    <div class="staff">
-      <div class="person lead-p"><img src="img/char/haneul.png" alt="" width="110" height="110"><b>실장</b><span>일을 받아 나누고 먼저 알림</span></div>
-      <div class="person"><img src="img/char/yujin.png" alt="" width="110" height="110"><b>조사</b><span>자료 · 출처 찾기</span></div>
-      <div class="person"><img src="img/char/doyun.png" alt="" width="110" height="110"><b>확인</b><span>맞는지 따져 보기</span></div>
-      <div class="person"><img src="img/char/seoyeon.png" alt="" width="110" height="110"><b>집필</b><span>안내문 · 교재</span></div>
-      <div class="person"><img src="img/char/minseo.png" alt="" width="110" height="110"><b>디자인</b><span>카드 · 페이지 · 영상</span></div>
-      <div class="person"><img src="img/char/jun.png" alt="" width="110" height="110"><b>편집</b><span>기획안 · 제안서</span></div>
-    </div>
-    <div class="alt-row" style="margin-top:40px">
-      <div class="txt"><span class="tag">캐릭터 시트</span><h3>직원을 누르면 열립니다</h3>
-        <ul><li>[＋ 직원 세우기] — 이름 · 들어갈 팀 · 맡을 일만 정하면 바로</li><li>이름 · 얼굴 · 직함 · 성격 · 조심할 점을 고침</li><li>위인을 앉히면 다음 일부터 그 방식으로 일함</li></ul></div>
-      <div><img class="shot" src="img/sheet.jpg" alt="캐릭터 시트 — 이순신을 앉힌 조사 담당" loading="lazy" width="1456" height="1468" style="max-width:520px;margin-inline:auto"></div>
-    </div>
-    <h3 class="sub-h">위인 자문단 — 한 분께 바로 묻기</h3>
-    <div class="figs">
-      <div class="fig"><img src="img/fig/yisunsin.png" alt="" width="96" height="96"><b>이순신</b><span>이길 조건을 다 갖춘 뒤에야 싸운 사람</span></div>
-      <div class="fig"><img src="img/fig/jeongjo.png" alt="" width="96" height="96"><b>정조</b><span>반대파를 없애는 대신 끌어안아 쓴 사람</span></div>
-      <div class="fig"><img src="img/fig/gwanggaeto.png" alt="" width="96" height="96"><b>광개토대왕</b><span>지킬 것을 정하고 나머지는 밀고 나간 사람</span></div>
-      <div class="fig"><img src="img/fig/zhugeliang.png" alt="" width="96" height="96"><b>제갈량</b><span>판을 먼저 그리고 그 안에서 수를 놓는 사람</span></div>
-      <div class="fig"><img src="img/fig/socrates.png" alt="" width="96" height="96"><b>소크라테스</b><span>답을 주지 않고 상대가 스스로 깨닫게 하는 사람</span></div>
-      <div class="fig"><img src="img/fig/machiavelli.png" alt="" width="96" height="96"><b>마키아벨리</b><span>사람이 실제로 어떤지를 보는 사람</span></div>
-    </div>
-    <div class="alt-row">
-      <div class="txt"><span class="tag">위인 자문단</span><h3>한 분께 한 번 묻기</h3>
-        <ul><li>"다음 달 행사를 어떻게 알리면 좋을까요?" — 그 위인의 방식으로 다섯 줄</li><li>받은 결과에도 [위인에게 묻기] — 조언대로 고치라고 할지는 대표님이</li><li>위인 카드를 직접 만들 수도 있습니다</li></ul></div>
-      <div><img class="shot" src="img/sages.jpg" alt="위인 자문단 화면 — 열세 분의 위인과 [물어보기]" loading="lazy" width="2080" height="1430"></div>
-    </div>
-  </div>
-</section>
-
-<!-- 8 안심 -->
-<section class="sec" id="safe">
-  <div class="wrap">
-    <div class="head">
-      <p class="eyebrow">안심하세요</p>
-      <h2>WISDOM 의 약속 넷</h2>
-    </div>
-    <div class="grid g4">
-      <div class="card"><h3>결재한 것만 나갑니다</h3><p>손님에게 가는 글은 대표님이 결재해야 나갑니다. 공개 게시는 늘 대표님이 직접 하십니다.</p></div>
-      <div class="card"><h3>자료는 내 컴퓨터에</h3><p>회사 자료와 결과물은 대표님 컴퓨터에만 남습니다. 저희 서버로 보내지 않습니다.</p></div>
-      <div class="card"><h3>개인정보는 가립니다</h3><p>전화 · 계좌 · 주민번호는 가린 뒤 AI 에 보내고, 돌아오면 되돌립니다.</p></div>
-      <div class="card"><h3>끝나도 대표님 것</h3><p>이용권이 끝나도 만든 자료는 그대로 열립니다. 지울 때는 휴지통으로 보냅니다.</p></div>
-    </div>
-    <div class="honest">
-      <h3>정직하게 말씀드립니다</h3>
-      <ul>
-        <li>AI 가 늘 완벽하지는 않습니다. 그래서 다른 AI 가 확인하고 대표님이 결재합니다.</li>
-        <li>챗지피티 · 클로드 · 안티그래비티 중 AI 요금제가 하나 있어야 합니다.</li>
-        <li>일 하나에 1~5분, 카드뉴스 · 영상은 10분 안팎 걸립니다.</li>
-        <li>지금은 윈도우가 정식이고, 맥은 시험 중입니다.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- 9 값 -->
-<section class="sec alt" id="price">
-  <div class="wrap">
-    <div class="head">
-      <p class="eyebrow">값</p>
-      <h2>하루 약 800원, 직원 한 팀</h2>
-      <p class="lead">요금은 하나입니다. 기능을 나눠 팔지 않습니다 — 달라지는 것은 처음에 얼마나 도와드리느냐뿐입니다. <b>지금 베타 동안은 무료입니다.</b></p>
-    </div>
-    <div class="plans">
-      <div class="plan">
-        <span class="tag">혼자 설치하실 수 있으면</span>
-        <h3>연 이용권</h3>
-        <p class="won"><b>29만 원</b> / 1년</p>
-        <p class="per">하루 약 800원</p>
-        <ul><li>안내서 두 권을 보며 직접 설치</li><li>막히면 카톡으로 물어보기</li></ul>
-      </div>
-      <div class="plan pick">
-        <span class="tag">처음이시면</span>
-        <h3>시작 묶음</h3>
-        <p class="won"><b>39만 원</b> / 첫해</p>
-        <p class="per">따로 사면 49만 원</p>
-        <ul><li>연 이용권 1년</li><li>1:1 원격 도입 90분 — 설치 · AI 연결 · 회사 세우기 · 첫 일 셋까지 같이</li></ul>
-      </div>
-      <div class="plan">
-        <span class="tag">10곳 이상 함께</span>
-        <h3>단체</h3>
-        <p class="won"><b>곳당 23만 원</b> / 1년</p>
-        <p class="per">교단 · 노회 · 상인회 · 학원 연합</p>
-        <ul><li>청구서 한 장으로</li><li>대표 교육 2시간 포함</li></ul>
+<section class="sec" id="chief">
+  <div class="wrap topic">
+    <div class="txt">
+      <p class="eyebrow">실장</p>
+      <h2>진짜 직원처럼,<br>실장이 먼저 보고합니다.</h2>
+      <p class="lead">앱을 여시면 실장이 어제 한 일과 오늘 할 일을 먼저 말씀드립니다. 제안은 제안일 뿐 — 단추를 누르셔야 일이 시작됩니다.</p>
+      <div class="points">
+        <div><b>아침 보고</b><span>어제 마친 일 · 결재 기다리는 일 · 막힌 일을 실장이 두세 문장으로. AI 는 하루 한 번, 가벼운 모델로.</span></div>
+        <div><b>회사 사실로 제안</b><span>서재에 '매주 금요일 예약 안내' 가 확인된 사실로 있으면, 금요일 아침에 "오늘이 그날입니다".</span></div>
+        <div><b>자동화 제안</b><span>같은 일을 사흘 넘게 손으로 맡기시면 "매일 하는 일로 걸어 둘까요?" — 거는 것은 대표님.</span></div>
+        <div><b>하루 마감 · 실장 일지</b><span>저녁 6시에 오늘을 정리해 알리고, 날마다 일지 한 장을 서재에 남깁니다.</span></div>
       </div>
     </div>
-    <div class="founder">
-      <div><span class="tag gold">첫 100곳</span><h3>창립 회원 — 연 19만 원, 이어 쓰셔도 그대로</h3>
-        <p>먼저 믿어 주신 분께 드리는 값입니다. 베타에 참여하신 분은 첫해 무료입니다.</p></div>
-      <a class="btn solid" href="#get">창립 회원으로 시작</a>
-    </div>
-    <div class="honest">
-      <h3>모든 이용권에 같이 드리는 것</h3>
-      <ul>
-        <li>모든 기능 · 업데이트 · 업종 틀 · 카톡 질문 · 원격 지원 연 2회 (그 뒤 30분 3만 원) · PC 2대</li>
-        <li>AI 요금은 대표님 계정으로 따로 냅니다 — 챗지피티 플러스 같은 요금제 하나, 월 약 3만 원. WISDOM 은 AI 를 되팔지 않습니다</li>
-        <li>결제 7일 안에는 전액 환불 · 그 뒤에는 남은 달만큼 환불</li>
-        <li>AI 회사 정책이 바뀌어 WISDOM 이 돌 수 없게 되면 남은 기간을 돌려 드립니다</li>
-        <li>값은 부가세 포함입니다</li>
-      </ul>
-    </div>
+    <div><img class="shot" src="img/morning.jpg" alt="실장의 아침 보고 — 어제 한 일과 오늘 제안, 제안마다 실장이 붙인 이유" width="1600" height="1081">
+      <p class="cap">보고 글과 제안 이유는 실제 AI 가 보기 회사의 기록으로 쓴 것입니다. 사실에 없는 숫자를 쓰면 코드가 그 글을 버립니다.</p></div>
   </div>
 </section>
 
-<!-- 10 시작 · 체험 받기 -->
-<section class="sec" id="get">
-  <div class="wrap">
-    <div class="head">
-      <p class="eyebrow">시작하는 법</p>
-      <h2>처음 30분이면 첫 결과를 받습니다</h2>
-    </div>
-    <ol class="start">
-      <li><div><h3>설치 파일 받기</h3><p>받은 파일을 두 번 누르고 [다음] 몇 번. 파란 'PC 보호' 창이 뜨면 [추가 정보] → [실행].</p></div></li>
-      <li><div><h3>실장과 함께 AI 연결</h3><p>쓰시는 AI 하나에 [로그인]. 함께 드리는 「AI 로그인 안내서」를 보며 따라 하셔도 됩니다.</p></div></li>
-      <li><div><h3>회사 세우기</h3><p>몇 가지 물음에 답하면 업종에 맞는 직원들이 섭니다.</p></div></li>
-      <li><div><h3>첫 일 맡기기</h3><p>이번 주 안내문 하나부터. 받은 것을 보고 [고치라고 하기] 도 해 보세요.</p></div></li>
-    </ol>
-    <div class="get" style="margin-top:32px">
-      <div style="display:flex;flex-direction:column;gap:.6rem">
-        <p class="eyebrow">체험 받기</p>
-        <h2>30일 체험 이용권을 드립니다</h2>
-        <p class="lead">설치 파일 · 안내서 두 권과 함께, 대표님 이름이 들어간 체험 이용권을 보내 드립니다. 원하시면 원격으로 같이 설치해 드립니다.</p>
-      </div>
-      <div style="display:flex;flex-direction:column;gap:.8rem">
-        <label for="code" style="font-weight:700">받으신 이용코드</label>
-        <div class="copybox"><input id="code" type="text" autocomplete="off" placeholder="예) WISDOM0000" style="flex:1;min-width:0;min-height:var(--tap);padding:.4rem .8rem;border:1px solid var(--line);border-radius:var(--r-md);background:var(--surface);color:var(--ink);font:inherit">
-          <button class="btn solid" id="codeBtn" type="button">받으러 가기</button></div>
-        <p class="cap" id="codeMsg" role="status">이용코드는 카카오톡 오픈채팅방 공지에 있습니다 — <a id="contact" href="https://open.kakao.com/o/g8xjXlIg" target="_blank" rel="noopener">목회AI연구소 오픈채팅</a></p>
-        <p id="dl" hidden><a class="btn solid" href="https://drive.google.com/drive/folders/1mOP1srYSzNv9KvTLAzX6_mm_RlCM41Ka?usp=sharing" target="_blank" rel="noopener">설치 파일 · 안내서 받기 (구글 드라이브)</a></p>
+<section class="sec alt" id="check">
+  <div class="wrap topic flip">
+    <div class="txt">
+      <p class="eyebrow">확인</p>
+      <h2>AI 가 한 일을,<br>다른 AI 가 확인합니다.</h2>
+      <p class="lead">"다 했습니다" 라는 말만으로는 끝난 것으로 치지 않습니다. 쓴 AI 와 다른 AI 가 합격 기준대로 하나씩 따지고, 코드가 셀 수 있는 것은 코드가 셉니다.</p>
+      <div class="points">
+        <div><b>합격 기준표</b><span>업무마다 정한 기준을 '몇 개 중 몇 개' 로. 못 미친 것은 담당에게 한 번 더 돌려보냅니다.</span></div>
+        <div><b>링크는 직접 열어 봅니다</b><span>AI 가 지어낸 유튜브 · 기사 주소를 코드가 열어 보고 걸러 냅니다.</span></div>
+        <div><b>그림은 눈으로</b><span>카드 · 영상 장면은 다른 AI 가 그림을 직접 보고, 넘친 글자는 코드가 잽니다.</span></div>
+        <div><b>밖으로 나가는 것만 결재</b><span>손님에게 갈 글은 대표님 결재 뒤에만 나갑니다. 안에서 쓰는 것은 스스로 마무리합니다.</span></div>
       </div>
     </div>
+    <div class="check" aria-label="확인하는 AI 의 보고 보기">
+      <span class="tag good">다른 AI 확인 — 손님 안내실 · 가을 신메뉴 안내</span>
+      <div class="ln"><span class="ok">✓</span><span>제목에 신메뉴 이름이 들어 있다 — "단호박 크림빵이 돌아왔어요"</span></div>
+      <div class="ln"><span class="ok">✓</span><span>가격 · 판매 시작일이 회사 자료와 같다</span></div>
+      <div class="ln"><span class="ok">✓</span><span>문자 한 통 90자 안쪽 — 코드가 센 것: 84자</span></div>
+      <div class="ln"><span class="no">✕</span><span>출처 주소 1개가 열리지 않아 뺐습니다</span></div>
+      <div class="sum"><b>기준 4개 중 4개 · 링크 3개 중 2개 열림</b><br><span class="small muted">화면 속 확인 내용은 설명을 위한 예시입니다.</span></div>
+    </div>
   </div>
 </section>
 
-<!-- 11 질문 -->
-<section class="sec alt" id="faq">
+<section class="sec" id="team">
   <div class="wrap">
-    <div class="head"><p class="eyebrow">자주 묻는 질문</p><h2>궁금하신 것</h2></div>
-    <details><summary>정말 AI 요금이 더 들지 않나요?</summary><p>쓰고 계신 챗지피티 · 클로드 요금제 안에서 일합니다. 요금제가 없으시면 하나는 필요합니다. 어떤 것이 맞는지 같이 골라 드립니다.</p></details>
-    <details><summary>컴퓨터를 잘 몰라도 쓸 수 있나요?</summary><p>그렇게 만들었습니다. 글씨 크기를 크게 고를 수 있고, 한 번에 한 가지만 묻습니다. 처음 설치는 같이 해 드립니다.</p></details>
-    <details><summary>우리 회사 자료가 밖으로 나가나요?</summary><p>자료와 결과물은 대표님 컴퓨터에만 남습니다. AI 에 일을 시킬 때는 전화 · 계좌 같은 개인정보를 가리고 보냅니다.</p></details>
-    <details><summary>결과가 마음에 안 들면요?</summary><p>[고치라고 하기] 에 한 줄로 적으시면 다시 씁니다. "다음 일부터도 늘 이렇게" 를 고르면 회사 방식으로 남습니다.</p></details>
-    <details><summary>설교를 AI 가 써 주나요?</summary><p>아닙니다. 설교는 목사님이 하십니다. WISDOM 은 설교 뒤의 한 주 — 요약 · 소그룹 교재 · 묵상 · 광고 · 카드 — 를 챙깁니다.</p></details>
-    <details><summary>값이 얼마인가요?</summary><p>연 29만 원(하루 약 800원)입니다. 처음이시면 원격 도입 90분이 들어간 시작 묶음(39만 원)을 권합니다. 첫 100곳은 창립 회원 연 19만 원이고, 지금 베타 동안은 무료입니다.</p></details>
-    <details><summary>써 보고 마음에 안 들면 환불되나요?</summary><p>먼저 30일 체험으로 써 보세요. 결제하신 뒤 7일 안에는 전액, 그 뒤에는 남은 달만큼 돌려 드립니다.</p></details>
-    <details><summary>교회 · 상인회처럼 여럿이 함께 살 수 있나요?</summary><p>10곳 이상이면 곳당 연 23만 원이고 청구서 한 장으로 드립니다. 대표 교육 2시간도 들어 있습니다.</p></details>
-    <details><summary>이용권이 끝나면 어떻게 되나요?</summary><p>새 일을 맡기는 것만 멈춥니다. 받은 것 · 서재 · 지난 자료는 그대로 보실 수 있습니다.</p></details>
-    <details><summary>맥에서도 되나요?</summary><p>애플 칩 맥용 판이 있지만 아직 시험 중입니다. 지금은 윈도우 10 · 11 을 권합니다.</p></details>
+    <div class="head"><p class="eyebrow">직원 · 위인</p><h2>직원은 일하며 자라고,<br>위인은 조언합니다.</h2>
+      <p class="lead">직원마다 얼굴 · 레벨 · 능력치 · 경력이 있고, 결재받은 일에서 배운 것을 기억합니다. 직원 자리에 위인을 앉히면 그분의 방식으로 일합니다.</p></div>
+    <div class="people">
+      <div class="person lead"><img src="img/char/haneul.png" alt="" width="96" height="96"><b>실장</b><span>받아 나누고 먼저 보고</span></div>
+      <div class="person"><img src="img/char/yujin.png" alt="" width="96" height="96"><b>조사</b><span>자료 · 출처 찾기</span></div>
+      <div class="person"><img src="img/char/doyun.png" alt="" width="96" height="96"><b>확인</b><span>맞는지 따지기</span></div>
+      <div class="person"><img src="img/char/seoyeon.png" alt="" width="96" height="96"><b>집필</b><span>안내문 · 교재</span></div>
+      <div class="person"><img src="img/char/minseo.png" alt="" width="96" height="96"><b>디자인</b><span>카드 · 페이지 · 영상</span></div>
+      <div class="person"><img src="img/char/jun.png" alt="" width="96" height="96"><b>편집</b><span>기획안 · 제안서</span></div>
+    </div>
   </div>
 </section>
 
-<!-- 12 만든이 -->
-<section class="sec" id="maker">
+<section class="sec alt" id="cost">
   <div class="wrap">
-    <div class="head"><p class="eyebrow">만든이</p><h2>"너무 어렵다" 를 가장 많이 들은 사람이 만들었습니다</h2></div>
-    <div class="maker">
-      <img class="photo" src="img/ceo.jpg" alt="백형진 대표" width="803" height="1200">
+    <div class="head"><p class="eyebrow">비용</p><h2>AI 를 써도 돈이 따로 들지 않습니다.</h2>
+      <p class="lead">WISDOM 은 이 PC 에 로그인해 둔 AI 프로그램을 불러 일합니다. 이미 내고 계신 요금제 한도에서 쓰이고, 열쇠(API 키)를 따로 만드실 필요가 없습니다. WISDOM 은 AI 를 되팔지 않습니다.</p></div>
+    <div class="grid g3 cost">
+      <div class="card main"><span class="who">기본</span><h3>요금제</h3><p>챗지피티 · 클로드 · 구글 AI 요금제로 로그인한 프로그램</p><p class="price">요금제 말고는 없습니다</p></div>
+      <div class="card"><span class="who">영상 목소리 · 유튜브</span><h3>내 구글 계정</h3><p>대표님 계정에서 직접 만든 열쇠로. 없으면 윈도우에 든 한국어 목소리를 씁니다</p><p class="price">무료 한도 안에서는 없습니다</p></div>
+      <div class="card"><span class="who">직접 고르셨을 때만</span><h3>쓴 만큼 내는 AI</h3><p>그록 · 오픈코드처럼 쓴 만큼 청구되는 AI. 더할 때 화면이 먼저 여쭙니다</p><p class="price">그 회사에 쓴 만큼</p></div>
+    </div>
+    <p class="cap" style="margin-top:16px">한도가 차면 멈추고, 까닭과 다시 쓸 수 있는 때를 알립니다. 클로드 크레딧이 바닥 가까우면 부르지 않고, 돈이 나가는 쪽으로 저절로 바꾸지 않습니다.</p>
+  </div>
+</section>
+
+<section class="sec" id="privacy">
+  <div class="wrap topic">
+    <div class="txt">
+      <p class="eyebrow">개인정보</p>
+      <h2>서버도 회원가입도<br>없습니다.</h2>
+      <p class="lead">자료와 결과물은 대표님 PC 에만 남습니다. PC 밖으로 나가는 것은 일을 맡길 때 그 AI 회사로 보내는 내용뿐입니다.</p>
+      <p><a href="privacy.html">개인정보 처리방침 전체 보기</a></p>
+    </div>
+    <ul class="promise">
+      <li>보내기 전에 전화번호 · 메일 · 주민번호 · 카드 · 계좌 · 주소를 가리고 보내고, 받은 답에서 되돌립니다.</li>
+      <li>비밀번호를 묻거나 저장하지 않습니다. 로그인은 그 AI 회사의 화면에서 끝납니다.</li>
+      <li>사용 통계를 보내지 않습니다. 소감 파일도 대표님이 직접 보내실 때만 나갑니다.</li>
+      <li>유튜브에는 비공개로만, 블로그에는 초안까지만 올립니다. 공개는 대표님이 그 사이트에서 하십니다.</li>
+      <li>이용권도 이 PC 에서 확인합니다. 끝나도 받은 것 · 서재 · 지난 자료는 그대로입니다.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec alt" id="story">
+  <div class="wrap maker">
+    <img src="img/ceo.jpg" alt="WISDOM 을 만든 백형진 대표" width="803" height="1200">
+    <div style="display:flex;flex-direction:column;gap:1rem">
+      <p class="eyebrow">만든 이야기</p>
+      <blockquote>"너무 어렵다" 를 가장 많이 들은 사람이 만들었습니다.</blockquote>
+      <p class="lead">강의에서 만난 사장님 · 목사님들은 AI 를 쓰고 싶어 하셨지만, 잇고 설정하는 데서 멈추셨습니다. 그래서 배우지 않아도 되게, 그리고 확인 없이는 '다 됐다' 하지 않게 만들었습니다.</p>
+      <p><a class="btn" href="story.html">만든 이야기 읽기</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="download">
+  <div class="wrap">
+    <div class="head"><p class="eyebrow">설치</p><h2>설치는 세 단계.</h2></div>
+    <div class="steps">
+      <div class="card"><h3>내려받아 압축 풀기</h3><p>아래에서 쓰시는 컴퓨터의 단추를 누르세요. 받은 파일에 마우스 오른쪽 단추 → [압축 풀기]. 관리자 권한은 필요 없습니다.</p></div>
+      <div class="card"><h3>경고가 뜨면 이렇게</h3><p>새 프로그램이라 윈도우는 파란 경고를, 맥은 '확인되지 않은 개발자' 를 띄울 수 있습니다. <a href="install.html#pc-protect">윈도우</a> · <a href="install.html#mac">맥</a>에서 여는 법.</p></div>
+      <div class="card"><h3>실장과 함께 준비</h3><p>처음 켜면 실장이 일할 AI 로그인 · 회사 자료 · 구글 · 유튜브를 하나씩 같이 준비합니다. 필요 없는 것은 건너뛰세요.</p></div>
+    </div>
+    <div class="get">
       <div>
-        <h3 style="font-size:24px">백형진 · 목회AI연구소 소장 · WISDOM 대표</h3>
-        <p class="muted-line">안양선민교회 담임목사 · AI 를 일하는 사람의 말로 풀어 가르치는 교육자</p>
-        <p class="lead" style="margin-top:.8rem">교회를 개척하고 방역 · 청소 · 택배로 이중직을 하던 때 AI 를 만났습니다. 주보 · 안내문 · 홍보물에 들던 시간이 크게 줄었고, 동시에 AI 가 그럴듯하게 틀리는 것도 많이 보았습니다. 그 뒤로 목사님 · 사장님 · 선교사님께 AI 를 가르쳐 왔습니다. 가장 많이 들은 말은 "너무 어렵다" 였습니다. 그래서 배우지 않아도 되게, 그리고 확인 없이는 '다 됐다' 하지 않게 만들었습니다.</p>
-        <div class="roles">
-          <div class="card"><span class="tag">책</span><p><b>『목회 AI 총정리』</b> (규장, 2026)<br>『바쁜 목회자를 위한 하루 10분 챗GPT 사용설명서』 (한사람출판사, 공저)<br>『교회를 다시 디자인하다』 (전자책)</p></div>
-          <div class="card"><span class="tag">강의</span><p>목회자 AI 실전교육 · 하베스트 온라인 선교대학교 · 숭실대 평생학습원 AI 동화 · 안동대 군위군 AI 교육 · 광명시 평생학습원 장애인 AI 교육</p></div>
-          <div class="card"><span class="tag">공부</span><p>안양대 신학대학원 목회학(M.Div.) · 글로벌사이버대 AI융합학과 재학 · 동양미래대 응용화학과</p></div>
-        </div>
-        <p class="quote">"AI 를 잘 쓰는 사람은 질문을 잘하는 사람이 아니라, 확인을 잘하는 사람이다." — 『목회 AI 총정리』 에서</p>
+        <h3 style="font-size:24px">WISDOM 1.13.8 베타</h3>
+        <p style="margin-top:.4rem">윈도우 · 맥 · 리눅스 설치 파일과 사용법 설명서 PDF 가 구글 드라이브 한 폴더에 있습니다. 단추를 누르면 폴더가 열리고, 쓰시는 컴퓨터의 파일을 고른 뒤 위쪽 [다운로드] 를 누르세요. 판이 바뀌면 같은 자리에 새 판을 올립니다.</p>
+        <p class="small" style="margin-top:.6rem">궁금하신 것은 <a href="https://open.kakao.com/o/g8xjXlIg" target="_blank" rel="noopener">카카오톡 오픈채팅방</a>에서 물어보세요.</p>
       </div>
+      <div style="display:flex;flex-direction:column;gap:.6rem">
+        <a class="btn solid big" href="https://drive.google.com/drive/folders/1mOP1srYSzNv9KvTLAzX6_mm_RlCM41Ka?usp=sharing" target="_blank" rel="noopener">윈도우용 — 윈도우.zip</a>
+        <a class="btn big" style="background:transparent;color:var(--on-deep);border-color:var(--deep-muted)" href="https://drive.google.com/drive/folders/1mOP1srYSzNv9KvTLAzX6_mm_RlCM41Ka?usp=sharing" target="_blank" rel="noopener">맥용 — 맥.zip (애플 칩)</a>
+        <a class="btn big" style="background:transparent;color:var(--on-deep);border-color:var(--deep-muted)" href="https://drive.google.com/drive/folders/1mOP1srYSzNv9KvTLAzX6_mm_RlCM41Ka?usp=sharing" target="_blank" rel="noopener">리눅스용 — 리눅스.tar.gz</a>
+        <span class="small" style="color:var(--deep-muted)">모두 같은 구글 드라이브 폴더가 열립니다</span>
+      </div>
+    </div>
+    <div class="stuck">
+      <h3>설치하다 막히셨나요? 지금 보이는 화면을 고르세요.</h3>
+      <div class="grid g4" style="margin-top:12px">
+        <a href="install.html#drive"><b>드라이브에서 어떻게 받죠?</b><span>파일 고르고 [다운로드]</span></a>
+        <a href="install.html#unzip"><b>받은 파일이 안 열려요</b><span>압축 풀기부터</span></a>
+        <a href="install.html#pc-protect"><b>파란 경고 창이 떠요</b><span>"Windows의 PC 보호"</span></a>
+        <a href="install.html#installer"><b>설치 창에서 뭘 누르죠?</b><span>다음 → 설치 → 마침</span></a>
+      </div>
+      <p class="small muted" style="margin-top:10px">맥이나 리눅스를 쓰시면 — <a href="install.html#mac">맥에서 처음 열 때</a> · <a href="install.html#linux">리눅스에서 설치할 때</a></p>
     </div>
   </div>
 </section>
@@ -511,24 +212,49 @@ footer{background:var(--mark-deep);color:var(--deep-muted);border-top:1px solid 
   <div class="wrap">
     <h2>모든 사람의 컴퓨터에,<br><em>가장 편하고 믿을 수 있는</em> 직원 한 명을.</h2>
     <p>배우지 않아도 됩니다. 맡기세요.</p>
-    <a class="btn solid" href="#get">30일 체험 받기</a>
+    <a class="btn solid big" href="#download">윈도우용 내려받기</a>
   </div>
 </section>
 </main>
-<footer><div class="wrap">WISDOM · 누구나 자동화할 수 있는 AI 에이전트 · 목회AI연구소 · 백형진 · <a href="mailto:backhung65@gmail.com" style="color:inherit">backhung65@gmail.com</a></div></footer>
+
+<footer><div class="wrap">
+  <div class="cols">
+    <div><b>WISDOM</b><span>누구나 자동화할 수 있는 AI 에이전트</span></div>
+    <div><b>알아보기</b><a href="updates.html">업데이트 소식</a><a href="story.html">만든 이야기</a><a href="#tour">화면</a></div>
+    <div><b>도움</b><a href="install.html">설치 도움말</a><a href="https://open.kakao.com/o/g8xjXlIg" target="_blank" rel="noopener">카카오톡 오픈채팅</a><a href="mailto:backhung65@gmail.com">메일 보내기</a></div>
+    <div><b>약속</b><a href="privacy.html">개인정보 처리방침</a><a href="#cost">비용</a></div>
+  </div>
+  <p class="last">© 2026 목회AI연구소 · 백형진 · WISDOM 1.13.8 베타</p>
+</div></footer>
 
 <script>
-/* 이용코드 — 코드 자체는 페이지에 없고, 맞는지 비교할 지문(SHA-256)만 있다. 코드는 카카오톡 오픈채팅 공지에서 */
-const CODE_HASH = '9ac47a4a0d485452c2c5062f4ab85b4fa9c696e0d4e4cfb36923970a0a2fb828';
-async function sha(t){ const b = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(t)); return [...new Uint8Array(b)].map(x => x.toString(16).padStart(2, '0')).join(''); }
-async function checkCode(){
-  const v = document.getElementById('code').value.trim().toUpperCase().replace(/[\s-]/g, ''), m = document.getElementById('codeMsg');
-  if (!v) { m.textContent = '이용코드를 넣어 주세요.'; return; }
-  try {
-    if (await sha(v) === CODE_HASH) { document.getElementById('dl').hidden = false; m.textContent = '확인했습니다. 아래 단추로 받으세요.'; }
-    else { m.textContent = '맞지 않는 코드입니다. 오픈채팅방 공지의 코드를 그대로 넣어 주세요.'; }
-  } catch (e) { m.textContent = '이 화면에서는 확인할 수 없습니다. 오픈채팅방 공지의 링크로 받아 주세요.'; }
+// 화면 둘러보기 — 탭을 누르면 그 화면의 실제 캡처와 한 줄 설명
+const TOUR = [
+  {k:'맡기기', img:'hero.jpg', w:1500, h:1030, t:'한 칸에 말로 적고 [맡기기]', d:'"이번 주말 신메뉴 안내 문자 써 줘" 처럼 적으시면 실장이 알맞은 팀에 넘깁니다. 자료를 붙이거나 실장과 먼저 이야기해도 됩니다.'},
+  {k:'아침 보고', img:'morning.jpg', w:1600, h:1081, t:'앱을 열면 실장이 먼저', d:'어제 한 일 · 오늘 제안을 실장이 정리합니다. 제안마다 [정하러 가기] · [맡길 칸에 적기] · [넘기기].'},
+  {k:'설문 카드', img:'survey.jpg', w:1344, h:884, t:'한 번에 한 물음', d:'업무를 고르면 한 물음씩 묻고, 답을 코드가 기획서 · 사양서로 엮습니다. 고를 거리도 세 개씩 드립니다.'},
+  {k:'받은 것', img:'results.jpg', w:1500, h:1030, t:'결재하거나 고치라고 하기', d:'결과물과 확인 결과(기준 몇 개 중 몇 개)가 함께 옵니다. 마음에 안 들면 한 줄로 고칠 점을 적으세요.'},
+  {k:'매일 하는 일', img:'daily.jpg', w:1600, h:738, t:'정한 때에 스스로', d:'요일과 시각을 정하면 실장이 알아서 시작합니다. 하루 상한과 끄는 스위치가 늘 함께 있습니다.'},
+  {k:'실장 일지', img:'diary.jpg', w:1600, h:834, t:'날마다 한 장씩 남는 보고', d:'아침 보고와 하루 마감이 서재에 날짜별로 쌓입니다. 회사의 사실로 바뀌지 않는 실장의 말입니다.'},
+  {k:'우리 회사', img:'staff.jpg', w:1500, h:1030, t:'직원 캐릭터와 팀', d:'직원마다 레벨 · 능력치 · 경력 · 배운 것. 직원을 새로 세우고 위인을 앉힐 수 있습니다.'},
+  {k:'처음 준비', img:'setup.jpg', w:1600, h:819, t:'실장과 함께 준비', d:'일할 AI 로그인부터 회사 자료 · 구글 · 유튜브까지, 실장이 한 단계씩 같이 합니다.'}
+];
+const tabs = document.getElementById('tabs');
+function show(i){
+  const x = TOUR[i];
+  const img = document.getElementById('tourImg');
+  img.src = 'img/' + x.img; img.width = x.w; img.height = x.h; img.alt = x.k + ' 화면 — ' + x.t;
+  document.getElementById('tourTag').textContent = x.k;
+  document.getElementById('tourTitle').textContent = x.t;
+  document.getElementById('tourText').textContent = x.d;
+  [...tabs.children].forEach((b, j) => b.setAttribute('aria-selected', String(i === j)));
 }
-document.getElementById('codeBtn').addEventListener('click', checkCode);
-document.getElementById('code').addEventListener('keydown', e => { if (e.key === 'Enter') checkCode(); });
+TOUR.forEach((x, i) => {
+  const b = document.createElement('button');
+  b.type = 'button'; b.role = 'tab'; b.textContent = x.k; b.onclick = () => show(i);
+  tabs.appendChild(b);
+});
+show(1);                                  // 첫 화면 캡처가 맡기기라 둘러보기는 아침 보고부터
 </script>
+</body>
+</html>
