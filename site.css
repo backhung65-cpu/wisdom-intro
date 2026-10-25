@@ -70,7 +70,7 @@ section.alt{background:var(--paper)}
 @media (max-width:900px){.nav{display:none}}
 
 /* 첫 화면 */
-.hero{background:var(--mark-deep);color:var(--on-deep);padding-block:56px 0;overflow:hidden}
+.hero{background:var(--mark-deep);color:var(--on-deep);padding-block:56px 72px;overflow:hidden}
 .pill{display:inline-flex;align-items:center;gap:.6rem;padding:.3rem .9rem .3rem .35rem;border-radius:999px;border:1px solid var(--deep-line);color:var(--deep-muted);text-decoration:none;font-size:15px;min-height:40px}
 .pill b{background:var(--mark-glow);color:#10233a;border-radius:999px;padding:.1rem .6rem;font-size:13.6px;white-space:nowrap;flex:none}
 .pill:hover{border-color:var(--mark-glow);color:var(--on-deep)}
@@ -86,7 +86,8 @@ section.alt{background:var(--paper)}
 .facts div{display:flex;align-items:baseline;gap:.5rem;color:var(--deep-muted);font-size:15px}
 .facts b{font-size:26px;color:var(--on-deep);font-weight:800}
 .hero-shot{margin-top:44px;position:relative}
-.hero-shot img{display:block;width:100%;height:auto;border-radius:var(--r-lg) var(--r-lg) 0 0;box-shadow:var(--lift);border:1px solid var(--deep-line);border-bottom:0}
+/* 캡처는 화면 한 장을 통째로 — 아래가 잘려 다음 칸으로 넘어가 보이지 않게 네 모서리 · 테두리를 다 둔다 (2026-10-26 대표 "이렇게 짤리면 안되지") */
+.hero-shot img{display:block;width:100%;height:auto;border-radius:var(--r-lg);box-shadow:var(--lift);border:1px solid var(--deep-line)}
 
 /* 화면 둘러보기 */
 .tabs{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:18px}
