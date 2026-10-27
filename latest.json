@@ -1,31 +1,31 @@
 {
- "version": "1.13.20",
+ "version": "1.13.21",
  "released": "2026-10-27",
- "notes": "실장의 아침 보고가 팝업으로 뜨고, 그 자리에서 실장에게 바로 묻습니다.",
+ "notes": "AI 하나만 쓰셔도 끝까지 돌아갑니다 — 안티그래비티만 쓰는 회사가 막히던 것을 고쳤습니다.",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 78713467,
-   "sha256": "79daba1fc7dc37e84fd69a1efb7a5dae93dd3a47f9bccc3f20b8b3218e213ea1"
+   "size": 78716431,
+   "sha256": "10273d0886e0fac28884f8a6f1d55ad6dd2250ef976b8006643cbece73c4a3bc"
   },
   "mac-arm64": {
    "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
    "name": "WISDOM-설치-맥.dmg",
-   "size": 82232661,
-   "sha256": "b79c8ec5e3a98b4e7c19e0ff924a8b187a12abb5a72e0f64783505440cdba838"
+   "size": 82234046,
+   "sha256": "9eca359d8c7a1eaae79a3a4a7722084e5ddfeda2c58c213645b2d3e1bb8b6d31"
   },
   "mac-x64": {
    "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
    "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 84057132,
-   "sha256": "1da3b8e766b3786e1a7d4d14ac07477f6839e53aaaf3c3820cab01b448dc0d62"
+   "size": 84058925,
+   "sha256": "be25b9e2ac3a19a32acf666d80660edf9c552ae43a9f021b1b1269c2c1f0c206"
   },
   "linux": {
    "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
    "name": "WISDOM-리눅스.tar.gz",
-   "size": 101937074,
-   "sha256": "e17635ce3ea47e10862a9ddda9dd2922b68d1185008af32cc778a2a9f5b11d66"
+   "size": 101935720,
+   "sha256": "74f3b2be57ddca6481c8e7e7c0272e289cd72a11eca190730244a55cff820733"
   }
  }
 }
