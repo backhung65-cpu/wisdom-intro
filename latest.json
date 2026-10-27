@@ -1,0 +1,31 @@
+{
+ "version": "1.13.19",
+ "released": "2026-10-27",
+ "notes": "이제 WISDOM 이 스스로 새 판으로 바뀝니다.",
+ "files": {
+  "windows": {
+   "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
+   "name": "WISDOM-설치-윈도우.exe",
+   "size": 78708543,
+   "sha256": "4d4c2d9644a260bd321322f519760074355ac4a6579ce5f954f347a16638de8e"
+  },
+  "mac-arm64": {
+   "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
+   "name": "WISDOM-설치-맥.dmg",
+   "size": 82228150,
+   "sha256": "928a6de9f423ec0caac1567be5e0b269bceb7adf4d5c20f3ed1809574bc8f248"
+  },
+  "mac-x64": {
+   "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
+   "name": "WISDOM-설치-맥-인텔.dmg",
+   "size": 84055489,
+   "sha256": "8a69a20aa5f2fb5fb8a2c899ee6553ad9c671452732e37840f8bfe343a74176e"
+  },
+  "linux": {
+   "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
+   "name": "WISDOM-리눅스.tar.gz",
+   "size": 101936503,
+   "sha256": "925b8a086191e986daf05a083a28a41568e68bdc7f3a121e24e28d39fa678944"
+  }
+ }
+}
