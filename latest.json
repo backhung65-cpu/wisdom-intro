@@ -1,31 +1,31 @@
 {
- "version": "1.13.19",
+ "version": "1.13.20",
  "released": "2026-10-27",
- "notes": "이제 WISDOM 이 스스로 새 판으로 바뀝니다.",
+ "notes": "실장의 아침 보고가 팝업으로 뜨고, 그 자리에서 실장에게 바로 묻습니다.",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 78708543,
-   "sha256": "4d4c2d9644a260bd321322f519760074355ac4a6579ce5f954f347a16638de8e"
+   "size": 78713467,
+   "sha256": "79daba1fc7dc37e84fd69a1efb7a5dae93dd3a47f9bccc3f20b8b3218e213ea1"
   },
   "mac-arm64": {
    "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
    "name": "WISDOM-설치-맥.dmg",
-   "size": 82228150,
-   "sha256": "928a6de9f423ec0caac1567be5e0b269bceb7adf4d5c20f3ed1809574bc8f248"
+   "size": 82232661,
+   "sha256": "b79c8ec5e3a98b4e7c19e0ff924a8b187a12abb5a72e0f64783505440cdba838"
   },
   "mac-x64": {
    "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
    "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 84055489,
-   "sha256": "8a69a20aa5f2fb5fb8a2c899ee6553ad9c671452732e37840f8bfe343a74176e"
+   "size": 84057132,
+   "sha256": "1da3b8e766b3786e1a7d4d14ac07477f6839e53aaaf3c3820cab01b448dc0d62"
   },
   "linux": {
    "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
    "name": "WISDOM-리눅스.tar.gz",
-   "size": 101936503,
-   "sha256": "925b8a086191e986daf05a083a28a41568e68bdc7f3a121e24e28d39fa678944"
+   "size": 101937074,
+   "sha256": "e17635ce3ea47e10862a9ddda9dd2922b68d1185008af32cc778a2a9f5b11d66"
   }
  }
 }
