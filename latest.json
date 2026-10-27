@@ -1,31 +1,31 @@
 {
- "version": "1.13.21",
+ "version": "1.13.22",
  "released": "2026-10-27",
- "notes": "AI 하나만 쓰셔도 끝까지 돌아갑니다 — 안티그래비티만 쓰는 회사가 막히던 것을 고쳤습니다.",
+ "notes": "스스로 새 판으로 바뀌는 것이 더 확실해졌습니다.",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 78716431,
-   "sha256": "10273d0886e0fac28884f8a6f1d55ad6dd2250ef976b8006643cbece73c4a3bc"
+   "size": 78719514,
+   "sha256": "4085d69d52cb437b60ecdb5d5a445f68c2b1b30add003dbe97d87949f723ff88"
   },
   "mac-arm64": {
    "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
    "name": "WISDOM-설치-맥.dmg",
-   "size": 82234046,
-   "sha256": "9eca359d8c7a1eaae79a3a4a7722084e5ddfeda2c58c213645b2d3e1bb8b6d31"
+   "size": 82228448,
+   "sha256": "5427f2d0f753a4c18a485811181296e4a22aba6d956fa2293d0b612aeae8c60e"
   },
   "mac-x64": {
    "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
    "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 84058925,
-   "sha256": "be25b9e2ac3a19a32acf666d80660edf9c552ae43a9f021b1b1269c2c1f0c206"
+   "size": 84059269,
+   "sha256": "ac382f77c8ef88619a08209fc78ffd6add8731a5cd9646488ce3d4b3139ec733"
   },
   "linux": {
    "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
    "name": "WISDOM-리눅스.tar.gz",
-   "size": 101935720,
-   "sha256": "74f3b2be57ddca6481c8e7e7c0272e289cd72a11eca190730244a55cff820733"
+   "size": 101937608,
+   "sha256": "be7984ddc4659cbdbd1d4dba56da8b001c0653b9c19005d632b552f78b419398"
   }
  }
 }
