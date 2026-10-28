@@ -1,31 +1,31 @@
 {
- "version": "1.13.22",
- "released": "2026-10-27",
- "notes": "스스로 새 판으로 바뀌는 것이 더 확실해졌습니다.",
+ "version": "1.13.23",
+ "released": "2026-10-29",
+ "notes": "휴대폰으로 실장과 — QR 한 번이면 휴대폰에서 맡기고 보고받습니다.",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 78719514,
-   "sha256": "4085d69d52cb437b60ecdb5d5a445f68c2b1b30add003dbe97d87949f723ff88"
+   "size": 78905451,
+   "sha256": "2058d53c3bf35851015573ba7bd35882aa8709defbb1d3a48b6a831b027f11cc"
   },
   "mac-arm64": {
    "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
    "name": "WISDOM-설치-맥.dmg",
-   "size": 82228448,
-   "sha256": "5427f2d0f753a4c18a485811181296e4a22aba6d956fa2293d0b612aeae8c60e"
+   "size": 82417878,
+   "sha256": "40b934c2e75e0af2c5198bfefab3a6b4b9bec5975dadd8bff581c914cf963b68"
   },
   "mac-x64": {
    "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
    "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 84059269,
-   "sha256": "ac382f77c8ef88619a08209fc78ffd6add8731a5cd9646488ce3d4b3139ec733"
+   "size": 84252244,
+   "sha256": "07f8650c256ffe0cf0e1c822373b15fb681a6a3c41eaf12c49e89376a232b472"
   },
   "linux": {
    "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
    "name": "WISDOM-리눅스.tar.gz",
-   "size": 101937608,
-   "sha256": "be7984ddc4659cbdbd1d4dba56da8b001c0653b9c19005d632b552f78b419398"
+   "size": 102129375,
+   "sha256": "fa2a18918123735a5d71098d897d8eb28876e9c956e87daafe0de04bf3c9ac80"
   }
  }
 }
