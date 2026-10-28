@@ -1,31 +1,31 @@
 {
- "version": "1.13.23",
+ "version": "1.13.24",
  "released": "2026-10-29",
- "notes": "휴대폰으로 실장과 — QR 한 번이면 휴대폰에서 맡기고 보고받습니다.",
+ "notes": "설문 카드에 레퍼런스 · 자료 · 작업 폴더를 붙이고, 실장(AI)이 사양서를 제대로 씁니다.",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 78905451,
-   "sha256": "2058d53c3bf35851015573ba7bd35882aa8709defbb1d3a48b6a831b027f11cc"
+   "size": 78922492,
+   "sha256": "330165fdd097f6d54ef86662b894c3047ffc7e3c6764185c8f700304c311ccf2"
   },
   "mac-arm64": {
    "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
    "name": "WISDOM-설치-맥.dmg",
-   "size": 82417878,
-   "sha256": "40b934c2e75e0af2c5198bfefab3a6b4b9bec5975dadd8bff581c914cf963b68"
+   "size": 82449104,
+   "sha256": "4943740afe0997d15c8678ea0fe2b57cab401f48b6f2338cfba671607ea1f226"
   },
   "mac-x64": {
    "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
    "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 84252244,
-   "sha256": "07f8650c256ffe0cf0e1c822373b15fb681a6a3c41eaf12c49e89376a232b472"
+   "size": 84269432,
+   "sha256": "fe9a053ca83057b4177de0d65bf5060e4a91a5e6826ebc510120277a9b162e3d"
   },
   "linux": {
    "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
    "name": "WISDOM-리눅스.tar.gz",
-   "size": 102129375,
-   "sha256": "fa2a18918123735a5d71098d897d8eb28876e9c956e87daafe0de04bf3c9ac80"
+   "size": 102133675,
+   "sha256": "9a671065dfbe613ec1332bf33b7a408b9b001042abba3fcf34d306444aa74330"
   }
  }
 }
