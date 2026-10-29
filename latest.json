@@ -1,31 +1,31 @@
 {
- "version": "1.13.26",
+ "version": "1.13.27",
  "released": "2026-10-29",
- "notes": "휴대폰 · 실장 대화에서 [이렇게 맡기기] 를 누르면 바로 시작합니다.",
+ "notes": "직원이 우리 회사를 알고 쓰고, 기준을 맞출 때까지 고칩니다.",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 78924978,
-   "sha256": "f092ea1923ee2e176555d3b7685c8827289262951961a0f577d06b402fdd5215"
+   "size": 79004125,
+   "sha256": "0c973dd1d8d1ff7f12e0b02f87f248b3a3a127747b11f72a3ba9c79690c760ec"
   },
   "mac-arm64": {
    "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
    "name": "WISDOM-설치-맥.dmg",
-   "size": 82447581,
-   "sha256": "573bb41cb3f43e7077948f0dda0a8274ed386b0f13a56a7434a6a0342a4e8c04"
+   "size": 82469217,
+   "sha256": "4b26b7819e086c2304f3a54d15d35d074c55a9f5b5cb0da306d0d6bb1f38079b"
   },
   "mac-x64": {
    "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
    "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 84274832,
-   "sha256": "18ccdc339cbc7cd48bb265c80091afa97bdce2ec02902bd19e2f68b4bdc5798d"
+   "size": 84308455,
+   "sha256": "362e71018a54391e25ad6ac89b3a436cf6a902a0f7d23bacd5dfae4f1992c565"
   },
   "linux": {
    "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
    "name": "WISDOM-리눅스.tar.gz",
-   "size": 102144576,
-   "sha256": "4c0e7b5a2be553bdea1df53538215394f37a11185ae0a945c5ce626948ebe91b"
+   "size": 102224144,
+   "sha256": "b385b2a818acaaea3efe951b21488071a53f5ae86f7a27a25a7b1c28f711451b"
   }
  }
 }
