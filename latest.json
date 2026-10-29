@@ -1,31 +1,31 @@
 {
- "version": "1.13.25",
+ "version": "1.13.26",
  "released": "2026-10-29",
- "notes": "자동 업데이트가 실제로 설치되도록 고쳤습니다. 휴대폰 화면도 고쳤습니다.",
+ "notes": "휴대폰 · 실장 대화에서 [이렇게 맡기기] 를 누르면 바로 시작합니다.",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 78925535,
-   "sha256": "40999fa0076b2a59f01e157736bd536b3d067723d5294f6a73408036c77b7031"
+   "size": 78924978,
+   "sha256": "f092ea1923ee2e176555d3b7685c8827289262951961a0f577d06b402fdd5215"
   },
   "mac-arm64": {
    "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
    "name": "WISDOM-설치-맥.dmg",
-   "size": 82449588,
-   "sha256": "2f9e672819f491544256a6644532021aa9972de7d1aa48b68fdc58a0e5d0efa8"
+   "size": 82447581,
+   "sha256": "573bb41cb3f43e7077948f0dda0a8274ed386b0f13a56a7434a6a0342a4e8c04"
   },
   "mac-x64": {
    "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
    "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 84272488,
-   "sha256": "09897d35e5cf1f722cee88d28eb226524527bb2d0cbd32a1152d4af4d0718af2"
+   "size": 84274832,
+   "sha256": "18ccdc339cbc7cd48bb265c80091afa97bdce2ec02902bd19e2f68b4bdc5798d"
   },
   "linux": {
    "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
    "name": "WISDOM-리눅스.tar.gz",
-   "size": 102150167,
-   "sha256": "f692b2438348f70f6afcb7bf47fe6b0712dfd37a1b8f21b1b04bd9a3ba2b904c"
+   "size": 102144576,
+   "sha256": "4c0e7b5a2be553bdea1df53538215394f37a11185ae0a945c5ce626948ebe91b"
   }
  }
 }
