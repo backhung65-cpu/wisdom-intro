@@ -1,31 +1,31 @@
 {
- "version": "1.13.24",
+ "version": "1.13.25",
  "released": "2026-10-29",
- "notes": "설문 카드에 레퍼런스 · 자료 · 작업 폴더를 붙이고, 실장(AI)이 사양서를 제대로 씁니다.",
+ "notes": "자동 업데이트가 실제로 설치되도록 고쳤습니다. 휴대폰 화면도 고쳤습니다.",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 78922492,
-   "sha256": "330165fdd097f6d54ef86662b894c3047ffc7e3c6764185c8f700304c311ccf2"
+   "size": 78925535,
+   "sha256": "40999fa0076b2a59f01e157736bd536b3d067723d5294f6a73408036c77b7031"
   },
   "mac-arm64": {
    "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
    "name": "WISDOM-설치-맥.dmg",
-   "size": 82449104,
-   "sha256": "4943740afe0997d15c8678ea0fe2b57cab401f48b6f2338cfba671607ea1f226"
+   "size": 82449588,
+   "sha256": "2f9e672819f491544256a6644532021aa9972de7d1aa48b68fdc58a0e5d0efa8"
   },
   "mac-x64": {
    "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
    "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 84269432,
-   "sha256": "fe9a053ca83057b4177de0d65bf5060e4a91a5e6826ebc510120277a9b162e3d"
+   "size": 84272488,
+   "sha256": "09897d35e5cf1f722cee88d28eb226524527bb2d0cbd32a1152d4af4d0718af2"
   },
   "linux": {
    "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
    "name": "WISDOM-리눅스.tar.gz",
-   "size": 102133675,
-   "sha256": "9a671065dfbe613ec1332bf33b7a408b9b001042abba3fcf34d306444aa74330"
+   "size": 102150167,
+   "sha256": "f692b2438348f70f6afcb7bf47fe6b0712dfd37a1b8f21b1b04bd9a3ba2b904c"
   }
  }
 }
