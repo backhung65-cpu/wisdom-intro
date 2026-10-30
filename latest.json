@@ -1,31 +1,31 @@
 {
- "version": "1.13.27",
- "released": "2026-10-29",
- "notes": "직원이 우리 회사를 알고 쓰고, 기준을 맞출 때까지 고칩니다.",
+ "version": "1.13.28",
+ "released": "2026-10-30",
+ "notes": "레퍼런스를 보여 주시면 그 느낌대로 만듭니다.",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 79004125,
-   "sha256": "0c973dd1d8d1ff7f12e0b02f87f248b3a3a127747b11f72a3ba9c79690c760ec"
+   "size": 79004053,
+   "sha256": "35f0adcdb1584f828251589d51e46c19ae24b2df6c3d1881107c234fae465852"
   },
   "mac-arm64": {
    "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
    "name": "WISDOM-설치-맥.dmg",
-   "size": 82469217,
-   "sha256": "4b26b7819e086c2304f3a54d15d35d074c55a9f5b5cb0da306d0d6bb1f38079b"
+   "size": 82537797,
+   "sha256": "56bc9a3bb5e05800cbb163cbb3751b0fc3f64d5527ab0840268214afadfb0368"
   },
   "mac-x64": {
    "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
    "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 84308455,
-   "sha256": "362e71018a54391e25ad6ac89b3a436cf6a902a0f7d23bacd5dfae4f1992c565"
+   "size": 84329736,
+   "sha256": "4ef829cf90c8a1d152be5e635335001ea77567be72ce51cdc8102424b8a20bde"
   },
   "linux": {
    "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
    "name": "WISDOM-리눅스.tar.gz",
-   "size": 102224144,
-   "sha256": "b385b2a818acaaea3efe951b21488071a53f5ae86f7a27a25a7b1c28f711451b"
+   "size": 102313588,
+   "sha256": "ad0650f73d20cc51a0e7a6357d737c368b8b8051ec05b1e76feb4f8341f3d74d"
   }
  }
 }
