@@ -1,31 +1,31 @@
 {
- "version": "1.13.28",
+ "version": "1.13.29",
  "released": "2026-10-30",
- "notes": "레퍼런스를 보여 주시면 그 느낌대로 만듭니다.",
+ "notes": "고치기는 단추 하나, 실장은 일을 차례로 나눕니다.",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 79004053,
-   "sha256": "35f0adcdb1584f828251589d51e46c19ae24b2df6c3d1881107c234fae465852"
+   "size": 79046835,
+   "sha256": "bde0de28a4c413df9a672c18581a464c201a18b9c5bf31091a175e950f7cbbe3"
   },
   "mac-arm64": {
    "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
    "name": "WISDOM-설치-맥.dmg",
-   "size": 82537797,
-   "sha256": "56bc9a3bb5e05800cbb163cbb3751b0fc3f64d5527ab0840268214afadfb0368"
+   "size": 82596121,
+   "sha256": "efbc50a26218fff6d74b01e308d3841b12013e3541ebcc3261f9db90b223daab"
   },
   "mac-x64": {
    "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
    "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 84329736,
-   "sha256": "4ef829cf90c8a1d152be5e635335001ea77567be72ce51cdc8102424b8a20bde"
+   "size": 84362977,
+   "sha256": "4a967b7cfa2234f5994039d273f6a30052cfc83edddc93cbdf50db1c07556441"
   },
   "linux": {
    "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
    "name": "WISDOM-리눅스.tar.gz",
-   "size": 102313588,
-   "sha256": "ad0650f73d20cc51a0e7a6357d737c368b8b8051ec05b1e76feb4f8341f3d74d"
+   "size": 102354731,
+   "sha256": "a80a1f9791c612022ef551b715611ee379d1cfa93b27a6c1da067750e9c2a5b2"
   }
  }
 }
