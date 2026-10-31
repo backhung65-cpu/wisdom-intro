@@ -1,31 +1,31 @@
 {
- "version": "1.13.30",
+ "version": "1.13.31",
  "released": "2026-10-31",
- "notes": "두 번 눌러도 한 번만, 오늘 날짜를 알고 일합니다.",
+ "notes": "결과를 끝까지 읽고, 바로 복사합니다.",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 79060857,
-   "sha256": "708a92f1e3c4a7238a6cb815fc101cb186f196766e1f12f3bdae305542d755c7"
+   "size": 79059499,
+   "sha256": "45f8c4d087475d982e5f72ed06e6a3da0cf94d1b8cf0a23fecaf11a3ab379356"
   },
   "mac-arm64": {
    "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
    "name": "WISDOM-설치-맥.dmg",
-   "size": 82652197,
-   "sha256": "4adb5738641b3bcd2024d82bc4f64c0b4c4c49cfeeff27a707b810bac5fbec42"
+   "size": 82659189,
+   "sha256": "86f5ef76af79a3568d2421f331b99c564fca85d1c0cc4c9ef107a6b21445ca8c"
   },
   "mac-x64": {
    "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
    "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 84424733,
-   "sha256": "904a073e3191cc337d2f6c7abfbe0e90104ada3f1dd7054a34d7287aa8713133"
+   "size": 84434630,
+   "sha256": "c324aa71f2fbfa629fa4c6d5c9442d4e046aba951b642b06c55e1f65961424a0"
   },
   "linux": {
    "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
    "name": "WISDOM-리눅스.tar.gz",
-   "size": 102352143,
-   "sha256": "f30bddfe1930ae899dceb35c7687a982cdcca9c03daa0e8e19f56e5849199fd2"
+   "size": 102359235,
+   "sha256": "3c80a990cee19c933012bc9fc5f461e96e6c398b61fed5ead0c4de7da91c3782"
   }
  }
 }
