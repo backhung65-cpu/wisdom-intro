@@ -1,31 +1,13 @@
 {
- "version": "1.13.31",
+ "version": "1.13.33",
  "released": "2026-10-31",
- "notes": "결과를 끝까지 읽고, 바로 복사합니다.",
+ "notes": "홈페이지에 그림을 그려 넣고, 바로 공개합니다.",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 79059499,
-   "sha256": "45f8c4d087475d982e5f72ed06e6a3da0cf94d1b8cf0a23fecaf11a3ab379356"
-  },
-  "mac-arm64": {
-   "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
-   "name": "WISDOM-설치-맥.dmg",
-   "size": 82659189,
-   "sha256": "86f5ef76af79a3568d2421f331b99c564fca85d1c0cc4c9ef107a6b21445ca8c"
-  },
-  "mac-x64": {
-   "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
-   "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 84434630,
-   "sha256": "c324aa71f2fbfa629fa4c6d5c9442d4e046aba951b642b06c55e1f65961424a0"
-  },
-  "linux": {
-   "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
-   "name": "WISDOM-리눅스.tar.gz",
-   "size": 102359235,
-   "sha256": "3c80a990cee19c933012bc9fc5f461e96e6c398b61fed5ead0c4de7da91c3782"
+   "size": 79097849,
+   "sha256": "a8e8bdf0a1acbc179219a681d8282e1c4bea4b6722b5bb274f28174d46800da5"
   }
  }
 }
