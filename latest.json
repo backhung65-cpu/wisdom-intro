@@ -1,31 +1,31 @@
 {
- "version": "1.13.29",
- "released": "2026-10-30",
- "notes": "고치기는 단추 하나, 실장은 일을 차례로 나눕니다.",
+ "version": "1.13.30",
+ "released": "2026-10-31",
+ "notes": "두 번 눌러도 한 번만, 오늘 날짜를 알고 일합니다.",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 79046835,
-   "sha256": "bde0de28a4c413df9a672c18581a464c201a18b9c5bf31091a175e950f7cbbe3"
+   "size": 79060857,
+   "sha256": "708a92f1e3c4a7238a6cb815fc101cb186f196766e1f12f3bdae305542d755c7"
   },
   "mac-arm64": {
    "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
    "name": "WISDOM-설치-맥.dmg",
-   "size": 82596121,
-   "sha256": "efbc50a26218fff6d74b01e308d3841b12013e3541ebcc3261f9db90b223daab"
+   "size": 82652197,
+   "sha256": "4adb5738641b3bcd2024d82bc4f64c0b4c4c49cfeeff27a707b810bac5fbec42"
   },
   "mac-x64": {
    "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
    "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 84362977,
-   "sha256": "4a967b7cfa2234f5994039d273f6a30052cfc83edddc93cbdf50db1c07556441"
+   "size": 84424733,
+   "sha256": "904a073e3191cc337d2f6c7abfbe0e90104ada3f1dd7054a34d7287aa8713133"
   },
   "linux": {
    "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
    "name": "WISDOM-리눅스.tar.gz",
-   "size": 102354731,
-   "sha256": "a80a1f9791c612022ef551b715611ee379d1cfa93b27a6c1da067750e9c2a5b2"
+   "size": 102352143,
+   "sha256": "f30bddfe1930ae899dceb35c7687a982cdcca9c03daa0e8e19f56e5849199fd2"
   }
  }
 }
