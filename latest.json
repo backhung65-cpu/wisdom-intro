@@ -1,13 +1,13 @@
 {
- "version": "1.13.34",
+ "version": "1.13.35",
  "released": "2026-11-01",
- "notes": "여러 AI 가 정한 순서대로 일하고, 마지막에 한 번 더 봅니다.",
+ "notes": "마지막 확인을 맡은 AI 가 막히면 다른 AI 가 봅니다.",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 79118230,
-   "sha256": "1924731f8be69ebfcaaeb770f583a9e089552c8f5d395b97425056b4dfa32558"
+   "size": 79121046,
+   "sha256": "d3393234ef7b3bfeff90c2ae6e2f38ae6c2975032b9d0e26ce5d351630b53f15"
   }
  }
 }
