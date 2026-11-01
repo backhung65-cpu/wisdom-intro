@@ -1,13 +1,13 @@
 {
- "version": "1.13.33",
- "released": "2026-10-31",
- "notes": "홈페이지에 그림을 그려 넣고, 바로 공개합니다.",
+ "version": "1.13.34",
+ "released": "2026-11-01",
+ "notes": "여러 AI 가 정한 순서대로 일하고, 마지막에 한 번 더 봅니다.",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 79097849,
-   "sha256": "a8e8bdf0a1acbc179219a681d8282e1c4bea4b6722b5bb274f28174d46800da5"
+   "size": 79118230,
+   "sha256": "1924731f8be69ebfcaaeb770f583a9e089552c8f5d395b97425056b4dfa32558"
   }
  }
 }
