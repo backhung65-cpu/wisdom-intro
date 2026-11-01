@@ -1,13 +1,13 @@
 {
- "version": "1.13.35",
- "released": "2026-11-01",
- "notes": "마지막 확인을 맡은 AI 가 막히면 다른 AI 가 봅니다.",
+ "version": "1.13.36",
+ "released": "2026-11-02",
+ "notes": "AI 마다 일할 모델을 고릅니다.",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 79121046,
-   "sha256": "d3393234ef7b3bfeff90c2ae6e2f38ae6c2975032b9d0e26ce5d351630b53f15"
+   "size": 79127126,
+   "sha256": "6aae15a6d1ddec2c8eac8d6415c028c5aed2f84e2bcb5f40bcaaeecfd5944750"
   }
  }
 }
