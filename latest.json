@@ -1,13 +1,13 @@
 {
- "version": "1.13.36",
+ "version": "1.13.37",
  "released": "2026-11-02",
- "notes": "AI 마다 일할 모델을 고릅니다.",
+ "notes": "자막 없는 영상도 쇼츠로 · 디자인은 그림으로 고릅니다.",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 79127126,
-   "sha256": "6aae15a6d1ddec2c8eac8d6415c028c5aed2f84e2bcb5f40bcaaeecfd5944750"
+   "size": 79135281,
+   "sha256": "28fd94046ccbcb643f4305d990e703a8e68c416f66912f4e1f2a66c2083f8e46"
   }
  }
 }
