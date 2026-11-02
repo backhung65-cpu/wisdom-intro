@@ -1,13 +1,13 @@
 {
- "version": "1.13.40",
+ "version": "1.13.41",
  "released": "2026-11-02",
- "notes": "세로 영상 쇼츠가 모든 디자인으로 · 1080 화질로 만들어집니다.",
+ "notes": "쇼츠를 만들자마자 유튜브로 올립니다.",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 79136125,
-   "sha256": "35a1f2d34586d1c8be4ba1a5e080484254b24f3577a48f640d7fc53ac33680ae"
+   "size": 79140246,
+   "sha256": "0523a481a0edb2e22305ee668c4d85243900920beea4cf9b73dd9ba036d6141e"
   }
  }
 }
