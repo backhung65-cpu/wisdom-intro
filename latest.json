@@ -8,6 +8,24 @@
    "name": "WISDOM-설치-윈도우.exe",
    "size": 79138046,
    "sha256": "863e91ddd83df3391c865933fa6899f7715fc2a90544945140bc2d010dfec118"
+  },
+  "mac-arm64": {
+   "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
+   "name": "WISDOM-설치-맥.dmg",
+   "size": 82749677,
+   "sha256": "b0e5dc315aee664b5257c344f79d92f63347ffb669da61b12fcfa3dbb6a0b600"
+  },
+  "mac-x64": {
+   "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
+   "name": "WISDOM-설치-맥-인텔.dmg",
+   "size": 84546770,
+   "sha256": "fe9c4547514602a132954d2484d1a9a98ac3407fbae82c907c7a5c562892c510"
+  },
+  "linux": {
+   "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
+   "name": "WISDOM-리눅스.tar.gz",
+   "size": 102444857,
+   "sha256": "ce3e296e10821fa79e2fa3a101f2b3d9c0d7acee5c6e51d0c9bff438c057399c"
   }
  }
 }
