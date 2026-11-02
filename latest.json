@@ -1,13 +1,13 @@
 {
- "version": "1.13.41",
- "released": "2026-11-02",
- "notes": "쇼츠를 만들자마자 유튜브로 올립니다.",
+ "version": "1.13.42",
+ "released": "2026-11-03",
+ "notes": "유튜브 · 블로거 로그인을 다른 계정으로 바꿀 수 있습니다.",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 79140246,
-   "sha256": "0523a481a0edb2e22305ee668c4d85243900920beea4cf9b73dd9ba036d6141e"
+   "size": 79138046,
+   "sha256": "863e91ddd83df3391c865933fa6899f7715fc2a90544945140bc2d010dfec118"
   }
  }
 }
