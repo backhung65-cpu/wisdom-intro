@@ -1,31 +1,31 @@
 {
- "version": "1.13.44",
- "released": "2026-11-03",
- "notes": "맥에서 카드뉴스 · 영상을 만들다 앱이 꺼지던 것을 고쳤습니다.",
+ "version": "1.13.45",
+ "released": "2026-11-04",
+ "notes": "디자인 사양서대로 만들고, 카드 그림을 AI 가 그리고, 개인 명함을 만듭니다.",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 79189134,
-   "sha256": "3a81646650a598188385cd53103868836a588891f83533b4441eebff9600898f"
+   "size": 79231218,
+   "sha256": "b2ebd3dc1c9831c3839e363a6675b4661a91bd7ef5a887f1c82a6930373c67ea"
   },
   "mac-arm64": {
    "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
    "name": "WISDOM-설치-맥.dmg",
-   "size": 82802386,
-   "sha256": "8b7512a9fcb839882a020ce5e0ceab8485018c57665700c74df810b1aa8d1218"
+   "size": 82841620,
+   "sha256": "ffb7cd651c9cfb3b1b5865561292ad6a5e447123ff6711104d3064b85256f2dc"
   },
   "mac-x64": {
    "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
    "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 84585231,
-   "sha256": "f968c6f1b08658ac5139fb48566958e3dc6fc7d140995430ea1bdf4d48fb9581"
+   "size": 84633321,
+   "sha256": "ae1b8d901a226ff65f033ab7a2cbd7378785f7ecc8c5dffce18ffd9983598ac6"
   },
   "linux": {
    "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
    "name": "WISDOM-리눅스.tar.gz",
-   "size": 102510025,
-   "sha256": "5b191c622ba2f8ccf9589f2140fc3874da743f7eccdc11bb734150fb5078a6df"
+   "size": 102537834,
+   "sha256": "6445eaf5d71b20da7039972211bde53c75a8be1fc367344d66d6547b9926cc22"
   }
  }
 }
