@@ -1,31 +1,31 @@
 {
- "version": "1.13.43",
+ "version": "1.13.44",
  "released": "2026-11-03",
- "notes": "홈페이지를 틀로 보고 고르고, [전화하기] · [길찾기] 가 붙습니다.",
+ "notes": "맥에서 카드뉴스 · 영상을 만들다 앱이 꺼지던 것을 고쳤습니다.",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 79189297,
-   "sha256": "f85eafe157309b204d19b9ad9e5824d8211dca07fa562af914e22963ad77b085"
+   "size": 79189134,
+   "sha256": "3a81646650a598188385cd53103868836a588891f83533b4441eebff9600898f"
   },
   "mac-arm64": {
    "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
    "name": "WISDOM-설치-맥.dmg",
-   "size": 82801096,
-   "sha256": "4b6d92304f13c25a4bd20694981ef6a425fba058783211bf8799353448ded153"
+   "size": 82802386,
+   "sha256": "8b7512a9fcb839882a020ce5e0ceab8485018c57665700c74df810b1aa8d1218"
   },
   "mac-x64": {
    "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
    "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 84588656,
-   "sha256": "09b138e9eeb3c574771a168d654508e39ff8eee7b204e6e0605a3d0bc29a2cc0"
+   "size": 84585231,
+   "sha256": "f968c6f1b08658ac5139fb48566958e3dc6fc7d140995430ea1bdf4d48fb9581"
   },
   "linux": {
    "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
    "name": "WISDOM-리눅스.tar.gz",
-   "size": 102510473,
-   "sha256": "7ecbd5257dd0460c88daa33560da385acc6213d885b4adc01073163401b3e4e5"
+   "size": 102510025,
+   "sha256": "5b191c622ba2f8ccf9589f2140fc3874da743f7eccdc11bb734150fb5078a6df"
   }
  }
 }
