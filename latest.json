@@ -1,31 +1,31 @@
 {
- "version": "1.13.45",
- "released": "2026-11-04",
- "notes": "디자인 사양서대로 만들고, 카드 그림을 AI 가 그리고, 개인 명함을 만듭니다.",
+ "version": "1.13.46",
+ "released": "2026-11-05",
+ "notes": "코딩팀 — 한 줄로 앱을 만들고, 그 자리에서 눌러 봅니다.",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 79231218,
-   "sha256": "b2ebd3dc1c9831c3839e363a6675b4661a91bd7ef5a887f1c82a6930373c67ea"
+   "size": 79267430,
+   "sha256": "6e7002baf57998dcae9f50efab31833977bd07dc8b78028e36438e9547aca37c"
   },
   "mac-arm64": {
    "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
    "name": "WISDOM-설치-맥.dmg",
-   "size": 82841620,
-   "sha256": "ffb7cd651c9cfb3b1b5865561292ad6a5e447123ff6711104d3064b85256f2dc"
+   "size": 82902956,
+   "sha256": "1f909056dcf8bf9b1861a02c34887695a11fc368a798506e38ca586930c4fa89"
   },
   "mac-x64": {
    "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
    "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 84633321,
-   "sha256": "ae1b8d901a226ff65f033ab7a2cbd7378785f7ecc8c5dffce18ffd9983598ac6"
+   "size": 84666055,
+   "sha256": "feed5bd763d67d268a82e818892623ed9d6dfc5a08337b0a87106d3d0ab24b96"
   },
   "linux": {
    "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
    "name": "WISDOM-리눅스.tar.gz",
-   "size": 102537834,
-   "sha256": "6445eaf5d71b20da7039972211bde53c75a8be1fc367344d66d6547b9926cc22"
+   "size": 102571623,
+   "sha256": "0a46dae138cadecf04647068bc92418e2d087e770cb4de73a3b93d2c76acc4ff"
   }
  }
 }
