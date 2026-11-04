@@ -1,31 +1,31 @@
 {
- "version": "1.13.46",
+ "version": "1.13.49",
  "released": "2026-11-05",
- "notes": "코딩팀 — 한 줄로 앱을 만들고, 그 자리에서 눌러 봅니다.",
+ "notes": "코딩 — 팀 단추로 맡기고, 새 창에서 만듭니다.",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 79267430,
-   "sha256": "6e7002baf57998dcae9f50efab31833977bd07dc8b78028e36438e9547aca37c"
+   "size": 79276519,
+   "sha256": "be4fe575019d5d8374bb3b336fa4ab86fc97f23bef105879e6490b872f545bad"
   },
   "mac-arm64": {
    "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
    "name": "WISDOM-설치-맥.dmg",
-   "size": 82902956,
-   "sha256": "1f909056dcf8bf9b1861a02c34887695a11fc368a798506e38ca586930c4fa89"
+   "size": 82918001,
+   "sha256": "831ffc11fc7ae40e87830e9eb8315b083598124bb0109a21a8c25895bcfc0237"
   },
   "mac-x64": {
    "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
    "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 84666055,
-   "sha256": "feed5bd763d67d268a82e818892623ed9d6dfc5a08337b0a87106d3d0ab24b96"
+   "size": 84689152,
+   "sha256": "ee21a6927e5cac23413c8b5fc98b566cfc2ef27b3e9fc479e257a4e908932a69"
   },
   "linux": {
    "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
    "name": "WISDOM-리눅스.tar.gz",
-   "size": 102571623,
-   "sha256": "0a46dae138cadecf04647068bc92418e2d087e770cb4de73a3b93d2c76acc4ff"
+   "size": 102579770,
+   "sha256": "795e8c2e2463d5d621c71e530d4d8d779573fb525a41413aec59eb0309ca7d1f"
   }
  }
 }
