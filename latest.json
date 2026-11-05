@@ -1,31 +1,31 @@
 {
- "version": "1.13.49",
+ "version": "1.13.50",
  "released": "2026-11-05",
- "notes": "코딩 — 팀 단추로 맡기고, 새 창에서 만듭니다.",
+ "notes": "코딩 — 대화로 만들고, 레퍼런스를 그대로 따릅니다.",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 79276519,
-   "sha256": "be4fe575019d5d8374bb3b336fa4ab86fc97f23bef105879e6490b872f545bad"
+   "size": 79298314,
+   "sha256": "4d8af71beec32142d8b259217c6e3881ef7ec87189afca5b274b948229391bd1"
   },
   "mac-arm64": {
    "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
    "name": "WISDOM-설치-맥.dmg",
-   "size": 82918001,
-   "sha256": "831ffc11fc7ae40e87830e9eb8315b083598124bb0109a21a8c25895bcfc0237"
+   "size": 82942646,
+   "sha256": "ddae7dcec16543a01383b83fce29b06e852739f824ff0f189ae128ca5fa6d26e"
   },
   "mac-x64": {
    "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
    "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 84689152,
-   "sha256": "ee21a6927e5cac23413c8b5fc98b566cfc2ef27b3e9fc479e257a4e908932a69"
+   "size": 84731003,
+   "sha256": "572ba8a5cb6ebc114790253b59c3340d8ceb4afb678e88f1811082ffef0a4c7e"
   },
   "linux": {
    "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
    "name": "WISDOM-리눅스.tar.gz",
-   "size": 102579770,
-   "sha256": "795e8c2e2463d5d621c71e530d4d8d779573fb525a41413aec59eb0309ca7d1f"
+   "size": 102615372,
+   "sha256": "5d28f4ab2ed127ec62abf2d27067f4185a79b11ac42c902209eed75638534b5f"
   }
  }
 }
