@@ -1,31 +1,31 @@
 {
- "version": "1.13.50",
- "released": "2026-11-05",
- "notes": "코딩 — 대화로 만들고, 레퍼런스를 그대로 따릅니다.",
+ "version": "1.13.53",
+ "released": "2026-11-06",
+ "notes": "새 창 · 파일 바꾸기 · 글꼴 · 브라우저 일 · 신청 받기",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 79298314,
-   "sha256": "4d8af71beec32142d8b259217c6e3881ef7ec87189afca5b274b948229391bd1"
+   "size": 86368398,
+   "sha256": "e99303a538cbb175a012f9804e0979e1c8088abe144c3755506f9f4604919d04"
   },
   "mac-arm64": {
    "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
    "name": "WISDOM-설치-맥.dmg",
-   "size": 82942646,
-   "sha256": "ddae7dcec16543a01383b83fce29b06e852739f824ff0f189ae128ca5fa6d26e"
+   "size": 92581969,
+   "sha256": "c671e5654943d872d1c24f914460e239281391624b70b5133c2ded7848768cb1"
   },
   "mac-x64": {
    "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
    "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 84731003,
-   "sha256": "572ba8a5cb6ebc114790253b59c3340d8ceb4afb678e88f1811082ffef0a4c7e"
+   "size": 94048551,
+   "sha256": "37dc20922d580f4b338e6043efa6e47c1f92703eb0249d3459ad5d853923dce2"
   },
   "linux": {
    "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
    "name": "WISDOM-리눅스.tar.gz",
-   "size": 102615372,
-   "sha256": "5d28f4ab2ed127ec62abf2d27067f4185a79b11ac42c902209eed75638534b5f"
+   "size": 113740079,
+   "sha256": "f3b907839db46f6724f28d978e5e8c25ac5d76895e2200601e70277af7b8a578"
   }
  }
 }
