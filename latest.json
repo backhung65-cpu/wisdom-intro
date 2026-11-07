@@ -1,31 +1,31 @@
 {
- "version": "1.13.53",
- "released": "2026-11-06",
- "notes": "새 창 · 파일 바꾸기 · 글꼴 · 브라우저 일 · 신청 받기",
+ "version": "1.13.54",
+ "released": "2026-11-07",
+ "notes": "문서 바꾸기 · 움직이는 GIF · SNS 퍼널 · 공개 주소 바로",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 86368398,
-   "sha256": "e99303a538cbb175a012f9804e0979e1c8088abe144c3755506f9f4604919d04"
+   "size": 86417414,
+   "sha256": "da30be43fea3ce45415c85cb6b677854f1b34067d157443f867d9f61799872a0"
   },
   "mac-arm64": {
    "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
    "name": "WISDOM-설치-맥.dmg",
-   "size": 92581969,
-   "sha256": "c671e5654943d872d1c24f914460e239281391624b70b5133c2ded7848768cb1"
+   "size": 92778194,
+   "sha256": "b95c1e6a1b368a6c4df9481b86f6841d633ea01bc0a7048fb6b4eff82ec6f654"
   },
   "mac-x64": {
    "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
    "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 94048551,
-   "sha256": "37dc20922d580f4b338e6043efa6e47c1f92703eb0249d3459ad5d853923dce2"
+   "size": 94307359,
+   "sha256": "8c89085440a489800982e1828b4233592eff59c443692d36dbb9331984f48b73"
   },
   "linux": {
    "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
    "name": "WISDOM-리눅스.tar.gz",
-   "size": 113740079,
-   "sha256": "f3b907839db46f6724f28d978e5e8c25ac5d76895e2200601e70277af7b8a578"
+   "size": 113990785,
+   "sha256": "53e90471773232fe0ad3107ee09114802bee60c838f9a439bbf8613b6b0524c6"
   }
  }
 }
