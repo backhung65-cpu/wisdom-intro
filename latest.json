@@ -1,31 +1,31 @@
 {
- "version": "1.13.56",
+ "version": "1.13.57",
  "released": "2026-11-10",
- "notes": "쇼츠 글꼴 · 색 · 겹치지 않는 결과 · 엑사온 연결",
+ "notes": "엑사온 안전하게 · 안티그래비티 연결 표시",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 90347430,
-   "sha256": "662bb62533c9fe7efe801eca08e6f091dd8f3f0a82b250fff1c356ca5e431662"
+   "size": 90355380,
+   "sha256": "54711fc8d88703085bff713b77e07bbacb6dcc6f77a8483c5d21cc80a706c6ee"
   },
   "mac-arm64": {
    "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
    "name": "WISDOM-설치-맥.dmg",
-   "size": 98631203,
-   "sha256": "63ca8bb4a8ccb730346581164aef105e970b95e128605071b24ef7c7f15f7b87"
+   "size": 98635424,
+   "sha256": "4458548efb8e47e6e11c8343402724726e85f27feaf3bbdc15567156adb99cfe"
   },
   "mac-x64": {
    "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
    "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 100165479,
-   "sha256": "9e1626b3d73a736a999960beeb3b9b2f3f802686dd311cdc79bd7cc34cba81c2"
+   "size": 100170850,
+   "sha256": "944f95bcdf0745958f00127eed12a7192a002a543821f61f3c7e6bb102e1e755"
   },
   "linux": {
    "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
    "name": "WISDOM-리눅스.tar.gz",
-   "size": 120264394,
-   "sha256": "f66d5a2e6618d07b95be1fc0b92e021bb065feb2f06128b25b27eb5b1613fce8"
+   "size": 120269096,
+   "sha256": "7eb057c268313f31f1e030f749c81447ebfaa71acb10b5fd2cd7fab2927b87f5"
   }
  }
 }
