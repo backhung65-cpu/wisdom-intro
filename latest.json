@@ -1,31 +1,31 @@
 {
- "version": "1.13.55",
- "released": "2026-11-09",
- "notes": "한글 모양 그대로 · 버셀 올리기 확인 · 영상 움직임 · 더 꼼꼼한 확인",
+ "version": "1.13.56",
+ "released": "2026-11-10",
+ "notes": "쇼츠 글꼴 · 색 · 겹치지 않는 결과 · 엑사온 연결",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 86452327,
-   "sha256": "fe95185b5ebc0272812313eaf13de83d2eb2e7ecc8e36dc603e5c5cc34a5b5a4"
+   "size": 90347430,
+   "sha256": "662bb62533c9fe7efe801eca08e6f091dd8f3f0a82b250fff1c356ca5e431662"
   },
   "mac-arm64": {
    "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
    "name": "WISDOM-설치-맥.dmg",
-   "size": 92787289,
-   "sha256": "4c798c349e5979cfddd0e69b33a0e4e37aaf16ceab0de35b602a6be8a7036fe9"
+   "size": 98631203,
+   "sha256": "63ca8bb4a8ccb730346581164aef105e970b95e128605071b24ef7c7f15f7b87"
   },
   "mac-x64": {
    "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
    "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 94334093,
-   "sha256": "d94ea51e223d3816e5ec79f1bd404d52a37ce61d9cedd4fa10c1246e624ba5b4"
+   "size": 100165479,
+   "sha256": "9e1626b3d73a736a999960beeb3b9b2f3f802686dd311cdc79bd7cc34cba81c2"
   },
   "linux": {
    "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
    "name": "WISDOM-리눅스.tar.gz",
-   "size": 114027055,
-   "sha256": "d84bcf62f10bbb3a8f49e759630596d9174ca854733c2aab75c6e875852cf599"
+   "size": 120264394,
+   "sha256": "f66d5a2e6618d07b95be1fc0b92e021bb065feb2f06128b25b27eb5b1613fce8"
   }
  }
 }
