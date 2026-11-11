@@ -1,31 +1,31 @@
 {
- "version": "1.13.58",
- "released": "2026-11-11",
- "notes": "아이디어 키우기 · 홈페이지 직접 꾸미기",
+ "version": "1.13.59",
+ "released": "2026-11-12",
+ "notes": "홈페이지 팀 · 첫 화면 정리",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 90390548,
-   "sha256": "986c6b30a1e38492d62ce0c2cbbdcd2cd59aab5527b256c6cd017c574acb08d3"
+   "size": 90395394,
+   "sha256": "d33b728d827e05d86f517c9d6e03ebc6489221e895d96cfa1a48804bfc861ac7"
   },
   "mac-arm64": {
    "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
    "name": "WISDOM-설치-맥.dmg",
-   "size": 98707275,
-   "sha256": "ffdbde1ee56f0e7ce9a4739d71625059587f6820a5b5b2921a60a7571afdfe8a"
+   "size": 98708518,
+   "sha256": "e8d1771a959b799e67d9282841f6c137a31af5923078142b5a5d2101a7889c2d"
   },
   "mac-x64": {
    "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
    "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 100210981,
-   "sha256": "7408d076eef9f74105624e8999963d6198d04429dbc728a369e575aee2f949b5"
+   "size": 100233556,
+   "sha256": "c4a2ae2f9785d389bbc3aad7a57aed2bf1f9012492fa8830ffb05a5caeffeeb3"
   },
   "linux": {
    "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
    "name": "WISDOM-리눅스.tar.gz",
-   "size": 120300535,
-   "sha256": "ee0bfcb5d3c44dc7363a17d4c723db224a05868e09e55c656f6bff9d91b69cee"
+   "size": 120326717,
+   "sha256": "3931f1472abab584013ee727943d317aac7280b5eaba0671b8982f75c7732e82"
   }
  }
 }
