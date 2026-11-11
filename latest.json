@@ -1,31 +1,31 @@
 {
- "version": "1.13.57",
- "released": "2026-11-10",
- "notes": "엑사온 안전하게 · 안티그래비티 연결 표시",
+ "version": "1.13.58",
+ "released": "2026-11-11",
+ "notes": "아이디어 키우기 · 홈페이지 직접 꾸미기",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 90355380,
-   "sha256": "54711fc8d88703085bff713b77e07bbacb6dcc6f77a8483c5d21cc80a706c6ee"
+   "size": 90390548,
+   "sha256": "986c6b30a1e38492d62ce0c2cbbdcd2cd59aab5527b256c6cd017c574acb08d3"
   },
   "mac-arm64": {
    "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
    "name": "WISDOM-설치-맥.dmg",
-   "size": 98635424,
-   "sha256": "4458548efb8e47e6e11c8343402724726e85f27feaf3bbdc15567156adb99cfe"
+   "size": 98707275,
+   "sha256": "ffdbde1ee56f0e7ce9a4739d71625059587f6820a5b5b2921a60a7571afdfe8a"
   },
   "mac-x64": {
    "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
    "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 100170850,
-   "sha256": "944f95bcdf0745958f00127eed12a7192a002a543821f61f3c7e6bb102e1e755"
+   "size": 100210981,
+   "sha256": "7408d076eef9f74105624e8999963d6198d04429dbc728a369e575aee2f949b5"
   },
   "linux": {
    "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
    "name": "WISDOM-리눅스.tar.gz",
-   "size": 120269096,
-   "sha256": "7eb057c268313f31f1e030f749c81447ebfaa71acb10b5fd2cd7fab2927b87f5"
+   "size": 120300535,
+   "sha256": "ee0bfcb5d3c44dc7363a17d4c723db224a05868e09e55c656f6bff9d91b69cee"
   }
  }
 }
