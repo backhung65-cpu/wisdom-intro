@@ -215,3 +215,5 @@ footer .last{margin-top:28px;padding-top:18px;border-top:1px solid var(--line);f
 .faq summary::after{content:"＋";margin-left:auto;color:var(--mark);font-size:20px}
 .faq details[open] summary::after{content:"－"}
 .faq details p{padding:0 0 1.1rem;color:var(--muted)}
+/* 만든 것 — 결과물 모음 */
+.made{grid-template-columns:repeat(auto-fit,minmax(min(17rem,100%),1fr))}.made figure{margin:0}.made .cap .tag{margin-right:.4rem}.made .shot{aspect-ratio:4/5;object-fit:cover;object-position:top}.made .shot.wide{aspect-ratio:6/5;object-fit:contain;background:var(--surface)}.made .vid video{aspect-ratio:4/5;object-fit:contain;background:#111}
