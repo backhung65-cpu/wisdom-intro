@@ -1,31 +1,31 @@
 {
- "version": "1.13.61",
+ "version": "1.13.62",
  "released": "2026-11-12",
- "notes": "아이디어 키우기 — 생각의 사슬",
+ "notes": "영상 — 길이 고르기 · 내 사진 · 편집 소재 · 끊김 검사",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 90403159,
-   "sha256": "301825cdf19f138b5ea0ec3f700f7692eebbb6bb0417b234957792ed61024751"
+   "size": 90424730,
+   "sha256": "45661a4b8f4d9c6a12267f8c3a1ddfb5dd7c4d23f53ede82e164881376f92caa"
   },
   "mac-arm64": {
    "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
    "name": "WISDOM-설치-맥.dmg",
-   "size": 98712514,
-   "sha256": "9009435280e6eeb031dcbbb298af72dac9b25e0bf81139fb5d82c803637590a4"
+   "size": 98743628,
+   "sha256": "821fe6f61c5c68330d4b46f17a44265026850c94916bc365744bae8819fb5bd9"
   },
   "mac-x64": {
    "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
    "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 100230288,
-   "sha256": "ae8de7f5782162a1fc22ebf752b5f9a32d7bdb3f236f35660f22bf26c1010201"
+   "size": 100276667,
+   "sha256": "695f868f8d9e9b56a165bdf4a74c21b225604a94d63c3a4504378625fbb4d9a7"
   },
   "linux": {
    "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
    "name": "WISDOM-리눅스.tar.gz",
-   "size": 120317545,
-   "sha256": "b8778176170a1b4e309f9d91c87ce1f9e3ee5c4b419c7caace96858713852282"
+   "size": 120347358,
+   "sha256": "ef3a33f3f0ceb79b4f5ce6addfca8594f81eaf063bedabcea87550b2cc718820"
   }
  }
 }
