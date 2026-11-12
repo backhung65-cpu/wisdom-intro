@@ -1,31 +1,31 @@
 {
- "version": "1.13.60",
+ "version": "1.13.61",
  "released": "2026-11-12",
- "notes": "브라우저 일 단추 돌아옴",
+ "notes": "아이디어 키우기 — 생각의 사슬",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 90397156,
-   "sha256": "1757c78aa5e42a4ce2523d14233acb067556785f0c9b0df593b4306819ef2e66"
+   "size": 90403159,
+   "sha256": "301825cdf19f138b5ea0ec3f700f7692eebbb6bb0417b234957792ed61024751"
   },
   "mac-arm64": {
    "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
    "name": "WISDOM-설치-맥.dmg",
-   "size": 98706893,
-   "sha256": "7b7780bdf8cd228578cba46c209684530acc7aece7e5b4037bd1becb46453bd8"
+   "size": 98712514,
+   "sha256": "9009435280e6eeb031dcbbb298af72dac9b25e0bf81139fb5d82c803637590a4"
   },
   "mac-x64": {
    "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
    "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 100229412,
-   "sha256": "cb2bdddd94fa7727d232716fc9a518edd2988c21d02af8ff35ae1267a413adc5"
+   "size": 100230288,
+   "sha256": "ae8de7f5782162a1fc22ebf752b5f9a32d7bdb3f236f35660f22bf26c1010201"
   },
   "linux": {
    "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
    "name": "WISDOM-리눅스.tar.gz",
-   "size": 120325579,
-   "sha256": "aa939e661fb4d5cdbc60bb1c64f428bf07d8c96ffff94641358827bb6684eb4b"
+   "size": 120317545,
+   "sha256": "b8778176170a1b4e309f9d91c87ce1f9e3ee5c4b419c7caace96858713852282"
   }
  }
 }
