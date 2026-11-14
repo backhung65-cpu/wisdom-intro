@@ -1,31 +1,31 @@
 {
- "version": "1.13.62",
- "released": "2026-11-12",
- "notes": "영상 — 길이 고르기 · 내 사진 · 편집 소재 · 끊김 검사",
+ "version": "1.13.63",
+ "released": "2026-11-14",
+ "notes": "아이디어를 대화로 키우기 · 쓰던 회사에도 새 기능",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 90424730,
-   "sha256": "45661a4b8f4d9c6a12267f8c3a1ddfb5dd7c4d23f53ede82e164881376f92caa"
+   "size": 90439192,
+   "sha256": "a8bf67c225c1e512bb6bfe282b61e69875bd48f1ac694f997ebd65305340a5ad"
   },
   "mac-arm64": {
    "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
    "name": "WISDOM-설치-맥.dmg",
-   "size": 98743628,
-   "sha256": "821fe6f61c5c68330d4b46f17a44265026850c94916bc365744bae8819fb5bd9"
+   "size": 98765820,
+   "sha256": "5aa28f933c66664664b3b732919bb7b639fc2816e7bfb3cfd4259b46df089581"
   },
   "mac-x64": {
    "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
    "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 100276667,
-   "sha256": "695f868f8d9e9b56a165bdf4a74c21b225604a94d63c3a4504378625fbb4d9a7"
+   "size": 100310829,
+   "sha256": "a64f4498d022eb61623383319e2ceb95d9646f7f90496fb997855024834b2c12"
   },
   "linux": {
    "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
    "name": "WISDOM-리눅스.tar.gz",
-   "size": 120347358,
-   "sha256": "ef3a33f3f0ceb79b4f5ce6addfca8594f81eaf063bedabcea87550b2cc718820"
+   "size": 120358177,
+   "sha256": "6bee3004161efe975a306b267f64baa818f0e99eda3c629d2f13abd489844d07"
   }
  }
 }
