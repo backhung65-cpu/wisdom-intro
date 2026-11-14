@@ -1,31 +1,31 @@
 {
- "version": "1.13.63",
- "released": "2026-11-14",
- "notes": "아이디어를 대화로 키우기 · 쓰던 회사에도 새 기능",
+ "version": "1.13.64",
+ "released": "2026-11-15",
+ "notes": "쌓인 임시 파일을 스스로 정리",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 90439192,
-   "sha256": "a8bf67c225c1e512bb6bfe282b61e69875bd48f1ac694f997ebd65305340a5ad"
+   "size": 90442762,
+   "sha256": "ed2c84e27a6c306e8ee9178a2f5ea4fd98983cce949ddce86956b63e2700977e"
   },
   "mac-arm64": {
    "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
    "name": "WISDOM-설치-맥.dmg",
-   "size": 98765820,
-   "sha256": "5aa28f933c66664664b3b732919bb7b639fc2816e7bfb3cfd4259b46df089581"
+   "size": 98773358,
+   "sha256": "725db6aa8a46ba9a5ce9edf3f181fe265fb13de98c02e79fa8ef34926f515886"
   },
   "mac-x64": {
    "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
    "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 100310829,
-   "sha256": "a64f4498d022eb61623383319e2ceb95d9646f7f90496fb997855024834b2c12"
+   "size": 100311799,
+   "sha256": "fa050b438d91179b657ecde320543d35bc1665b6656f95ce015b0958c95a1a61"
   },
   "linux": {
    "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
    "name": "WISDOM-리눅스.tar.gz",
-   "size": 120358177,
-   "sha256": "6bee3004161efe975a306b267f64baa818f0e99eda3c629d2f13abd489844d07"
+   "size": 120373794,
+   "sha256": "1dc88a8f7cb2f8766245d8529106b00e813ea00647920a0b70fe948fd9a36632"
   }
  }
 }
