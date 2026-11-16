@@ -1,31 +1,31 @@
 {
- "version": "1.13.64",
- "released": "2026-11-15",
- "notes": "쌓인 임시 파일을 스스로 정리",
+ "version": "1.13.65",
+ "released": "2026-11-16",
+ "notes": "설문 끝에 기획서 · 사양서 · 시방서",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 90442762,
-   "sha256": "ed2c84e27a6c306e8ee9178a2f5ea4fd98983cce949ddce86956b63e2700977e"
+   "size": 90455075,
+   "sha256": "ab1b1578deda1dc999ee143da4fa1c2711c4ce0dad1c31c62e9d224773da671c"
   },
   "mac-arm64": {
    "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
    "name": "WISDOM-설치-맥.dmg",
-   "size": 98773358,
-   "sha256": "725db6aa8a46ba9a5ce9edf3f181fe265fb13de98c02e79fa8ef34926f515886"
+   "size": 98772312,
+   "sha256": "2a811eddfda4d3d3174e57d25ec2dd647b0b8190337c92bdabc5e8375b44baac"
   },
   "mac-x64": {
    "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
    "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 100311799,
-   "sha256": "fa050b438d91179b657ecde320543d35bc1665b6656f95ce015b0958c95a1a61"
+   "size": 100324308,
+   "sha256": "7d23e84732630c767db845d707d5db7e708bac132bfe339300c44599c01d7897"
   },
   "linux": {
    "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
    "name": "WISDOM-리눅스.tar.gz",
-   "size": 120373794,
-   "sha256": "1dc88a8f7cb2f8766245d8529106b00e813ea00647920a0b70fe948fd9a36632"
+   "size": 120376110,
+   "sha256": "a168fe29dafab1fcdc54f844741bd71fa5e39cd6db1437821f0148410c240aeb"
   }
  }
 }
