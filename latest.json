@@ -1,31 +1,13 @@
 {
- "version": "1.13.67",
+ "version": "1.13.68",
  "released": "2026-11-17",
- "notes": "일하는 과정이 보입니다 · 대화 창",
+ "notes": "첫 화면에 내 일 · 일마다 전담 직원",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 90488808,
-   "sha256": "399d1794091654a1a71271d3bb96c20d8271cd72e69cbd7528c04b0692a90019"
-  },
-  "mac-arm64": {
-   "url": "https://drive.usercontent.google.com/download?id=1N2-mMfaHMxg8HVjrvZX5VrRnIuP4RFy9&export=download&confirm=t",
-   "name": "WISDOM-설치-맥.dmg",
-   "size": 98830285,
-   "sha256": "2b532bb090eec86477f203468c96ab2c024e6939adb1ef173ce43476c40d4a2c"
-  },
-  "mac-x64": {
-   "url": "https://drive.usercontent.google.com/download?id=1jWQ5K6unzf87TFseXKDonnCIFrvl4HJV&export=download&confirm=t",
-   "name": "WISDOM-설치-맥-인텔.dmg",
-   "size": 100351435,
-   "sha256": "fec80b0b60c79fd2df94a0be68e76aaba8cda82e509566693f82975a577fd2b4"
-  },
-  "linux": {
-   "url": "https://drive.usercontent.google.com/download?id=1G4w0XSQneakXwANMDuXqgMqlIocNkkys&export=download&confirm=t",
-   "name": "WISDOM-리눅스.tar.gz",
-   "size": 120409628,
-   "sha256": "ec9005c5097cdc4521b2d6f61efef77fc1b59bc45e43081882cdafb3729879dc"
+   "size": 90499371,
+   "sha256": "3edd4e2164d0c6e21fed25d04b1a86ccdd9d32c6dc7ce1a0710b1e2c723c61a4"
   }
  }
 }
