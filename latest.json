@@ -1,13 +1,13 @@
 {
- "version": "1.13.69",
+ "version": "1.13.70",
  "released": "2026-11-17",
- "notes": "훈련된 직원 옮기기 · 더 단순한 화면",
+ "notes": "훈련 효과를 숫자로",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 90519297,
-   "sha256": "3da00ddb2832ea723de6ae6cf31f1b09fa944f097968851342419de06bc3edd0"
+   "size": 90529004,
+   "sha256": "d1cf5bc6205de1ae9afc2cf32ca59180a8692c4ce5cdc02d21bfe9456fbc1b7b"
   }
  }
 }
