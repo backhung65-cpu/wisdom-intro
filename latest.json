@@ -1,13 +1,13 @@
 {
- "version": "1.13.68",
+ "version": "1.13.69",
  "released": "2026-11-17",
- "notes": "첫 화면에 내 일 · 일마다 전담 직원",
+ "notes": "훈련된 직원 옮기기 · 더 단순한 화면",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 90499371,
-   "sha256": "3edd4e2164d0c6e21fed25d04b1a86ccdd9d32c6dc7ce1a0710b1e2c723c61a4"
+   "size": 90519297,
+   "sha256": "3da00ddb2832ea723de6ae6cf31f1b09fa944f097968851342419de06bc3edd0"
   }
  }
 }
