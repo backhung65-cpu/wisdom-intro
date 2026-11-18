@@ -1,13 +1,13 @@
 {
- "version": "1.13.70",
- "released": "2026-11-17",
- "notes": "훈련 효과를 숫자로",
+ "version": "1.13.71",
+ "released": "2026-11-18",
+ "notes": "전문가 채팅을 찾기 쉽게",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 90529004,
-   "sha256": "d1cf5bc6205de1ae9afc2cf32ca59180a8692c4ce5cdc02d21bfe9456fbc1b7b"
+   "size": 90529329,
+   "sha256": "db28f7197ff699825ddf7057fd8ea60e13b5e966cbdf0447b554d5b3e0aab05e"
   }
  }
 }
