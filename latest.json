@@ -1,13 +1,13 @@
 {
- "version": "1.13.72",
- "released": "2026-11-18",
- "notes": "전문가 채팅에서 바로 앱으로",
+ "version": "1.13.73",
+ "released": "2026-11-19",
+ "notes": "전문 직원을 들이고, 함께 키우기",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 90531778,
-   "sha256": "d845df8c9152b9b67b5c2f1c190326a63fc9e31cd11b00cca64ec439c7f8bae8"
+   "size": 90557039,
+   "sha256": "2d4dce8ec35cc267045bc3933d8d4dd5147aaed2ac9fa3093ec3498e8708c1c9"
   }
  }
 }
