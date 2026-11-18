@@ -1,13 +1,13 @@
 {
- "version": "1.13.71",
+ "version": "1.13.72",
  "released": "2026-11-18",
- "notes": "전문가 채팅을 찾기 쉽게",
+ "notes": "전문가 채팅에서 바로 앱으로",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 90529329,
-   "sha256": "db28f7197ff699825ddf7057fd8ea60e13b5e966cbdf0447b554d5b3e0aab05e"
+   "size": 90531778,
+   "sha256": "d845df8c9152b9b67b5c2f1c190326a63fc9e31cd11b00cca64ec439c7f8bae8"
   }
  }
 }
