@@ -1,13 +1,13 @@
 {
- "version": "1.13.73",
- "released": "2026-11-19",
- "notes": "전문 직원을 들이고, 함께 키우기",
+ "version": "1.13.74",
+ "released": "2026-11-26",
+ "notes": "발표 자료가 모션 영상으로 · 코딩은 정확하게",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 90557039,
-   "sha256": "2d4dce8ec35cc267045bc3933d8d4dd5147aaed2ac9fa3093ec3498e8708c1c9"
+   "size": 90677872,
+   "sha256": "b48d2af10bb6f9a75433df4b84702da950b4653fe4d21c516608d7181eacfa37"
   }
  }
 }
