@@ -1,13 +1,13 @@
 {
- "version": "1.13.75",
+ "version": "1.13.76",
  "released": "2026-11-26",
- "notes": "AI 가 얼마나 남았는지 실장이 바로 알려 드립니다",
+ "notes": "클로드가 얼마나 남았는지 앱을 켜자마자 압니다",
  "files": {
   "windows": {
    "url": "https://drive.usercontent.google.com/download?id=1d7oSPId6u_Uf9_UKz-gIl1HQLFb8VxtD&export=download&confirm=t",
    "name": "WISDOM-설치-윈도우.exe",
-   "size": 90692113,
-   "sha256": "ce90bf116e6729d776997321c61bff6ab7a84e258e4b6c46c5e41f631e1b3e6b"
+   "size": 90693206,
+   "sha256": "148538ce74788526de26fbc41eacb25acf04473bfeb6023fad33f7323b2bdf34"
   }
  }
 }
